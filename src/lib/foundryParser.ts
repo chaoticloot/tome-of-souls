@@ -193,7 +193,7 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
         }
         hitDiceMap[hdDenom].count += level;
 
-        const advancements = item.system?.advancement || [];
+        const advancements = Array.isArray(item.system?.advancement) ? item.system.advancement : Object.values(item.system?.advancement || {});
         const hpAdv = advancements.find((a: any) => a.type === 'HitPoints');
         if (hpAdv?.value) {
             Object.keys(hpAdv.value).forEach((lvlStr) => {
