@@ -571,7 +571,7 @@ export function CharacterSheet({ char }: Props) {
           <div
             className={`flex-1 min-w-0 order-1 lg:order-3 print-col-3 relative ${["actions", "inventory", "spells", "features"].includes(mobileTab) ? "flex flex-col" : "hidden md:flex lg:flex"}`}
           >
-            <div className="flex flex-col w-full h-full lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 print:static print:h-auto">
+            <div className="flex flex-col w-full h-full lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 print:static print:h-auto print-col-3-inner">
               {/* Desktop Tab Navigation for Right Column */}
               <div className="hidden lg:grid grid-cols-4 gap-2 print:hidden mb-4 mt-0 shrink-0">
                 {[
@@ -591,10 +591,10 @@ export function CharacterSheet({ char }: Props) {
               </div>
 
               {/* Tab Content scrolling container */}
-              <div className="flex-1 overflow-visible lg:overflow-hidden p-0 relative flex flex-col min-h-0 lg:min-h-0 h-auto print:static print:h-auto print:overflow-visible print:block print:space-y-4">
+              <div className="flex-1 overflow-visible lg:overflow-hidden p-0 relative flex flex-col min-h-0 lg:min-h-0 h-auto print:static print:h-auto print:overflow-visible print-tab-contents">
                 <Section
                   title="Actions & Attacks"
-                  className={`rounded border-gray-700 bg-white text-black h-fit lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "actions" ? "flex" : "hidden md:hidden"} ${desktopTab === "actions" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-fit lg:h-full flex-1 print-actions-section print:h-auto print:break-inside-avoid ${mobileTab === "actions" ? "flex" : "hidden md:hidden"} ${desktopTab === "actions" ? "lg:flex" : "lg:hidden"}`}
                 >
                   <div className="overflow-visible lg:overflow-y-auto flex-1 min-h-0 w-full relative print:overflow-visible print:h-auto">
                     <table className="w-full text-[11px] text-left border-collapse">
@@ -965,9 +965,9 @@ export function CharacterSheet({ char }: Props) {
                   title="Features & Traits"
                   className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print-section-show print-break-inside-avoid print-full-width ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
                 >
-                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print-overflow-visible">
+                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print-overflow-visible print-2-cols">
                     {localResources && localResources.length > 0 && (
-                      <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm print:bg-white print:border-gray-300 print:break-inside-avoid">
+                      <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm print:bg-white print:border-gray-300 print:break-inside-avoid print:col-span-2">
                         {localResources.map((res, i) => (
                           <div key={i} className="flex flex-col gap-2">
                             <div className="flex justify-between items-center text-xs font-bold text-gray-700 tracking-wider">

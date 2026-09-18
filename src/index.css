@@ -80,6 +80,7 @@ body {
   .print-top-grid {
     display: flex !important;
     flex-direction: row !important;
+    flex-wrap: wrap !important;
     gap: 12px !important;
     align-items: flex-start !important;
     width: 100% !important;
@@ -98,11 +99,16 @@ body {
     flex-shrink: 0 !important;
     order: 2 !important;
   }
-  .print-col-3 {
+  .print-col-3,
+  .print-col-3-inner,
+  .print-tab-contents {
+    display: contents !important;
+  }
+  .print-actions-section {
     display: flex !important;
     flex-direction: column !important;
-    flex: 1 1 0% !important;
-    min-width: 0 !important;
+    width: 33% !important;
+    flex-shrink: 0 !important;
     order: 3 !important;
   }
   .print-section-show {
@@ -114,9 +120,10 @@ body {
 
   /* Full-width 100% sections for Spells, Features & Inventory */
   .print-full-width {
-    display: block !important;
-    clear: both !important;
+    display: flex !important;
+    flex-direction: column !important;
     width: 100% !important;
+    flex-basis: 100% !important;
     margin-top: 14px !important;
   }
   .print-2-cols {
