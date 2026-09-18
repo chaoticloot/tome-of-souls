@@ -190,7 +190,7 @@ export function CharacterSheet({ char }: Props) {
     <div className="max-w-[1200px] w-full mx-auto bg-[#1b1c22] text-gray-300 shadow-xl print:shadow-none print:bg-white print:text-black my-0 lg:my-8 pb-0 lg:pb-8 print:p-0 print:m-0 border-0 lg:border-4 border-black print:border-dnd-border relative">
       {/* Header Section (Dark themed) */}
       <div
-        className={`bg-[#1b1c22] border-b-0 lg:border-b-2 border-red-800 p-4 md:p-6 flex-col md:flex-row gap-4 md:gap-6 items-end print:bg-white print:text-black print:border-b print:border-dnd-border print:flex ${mobileTab === "main" ? "flex" : "hidden lg:flex"}`}
+        className={`bg-[#1b1c22] border-b-0 lg:border-b-2 border-red-800 p-4 md:p-6 flex-col md:flex-row gap-4 md:gap-6 items-end print:bg-white print:text-black print:border-dnd-border print-header-show ${mobileTab === "main" ? "flex" : "hidden lg:flex"}`}
       >
         {/* Name Area */}
         <div className="flex-1 flex justify-between items-start">
@@ -368,10 +368,10 @@ export function CharacterSheet({ char }: Props) {
         </div>
 
         {/* 3 Column Layout */}
-        <div className="flex flex-col lg:flex-row gap-6 print:flex-row print:flex-wrap print:gap-4 items-stretch print:items-start">
+        <div className="flex flex-col lg:flex-row gap-6 items-stretch print-top-grid">
           {/* COLUMN 1: Saves & Details */}
           <div
-            className={`w-full lg:w-60 flex-shrink-0 flex-col gap-4 order-2 lg:order-1 lg:flex print:flex print:w-[210px] print:order-1 ${mobileTab === "main" ? "flex" : "hidden"}`}
+            className={`w-full lg:w-60 flex-shrink-0 flex-col gap-4 order-2 lg:order-1 lg:flex print-col-1 ${mobileTab === "main" ? "flex" : "hidden"}`}
           >
             <Section
               title="Saving Throws"
@@ -514,7 +514,7 @@ export function CharacterSheet({ char }: Props) {
 
           {/* COLUMN 2: Skills */}
           <div
-            className={`w-full lg:w-72 flex-shrink-0 flex-col gap-4 order-3 lg:order-2 lg:flex print:flex print:w-[240px] print:order-2 ${mobileTab === "skills" ? "flex" : "hidden"}`}
+            className={`w-full lg:w-72 flex-shrink-0 flex-col gap-4 order-3 lg:order-2 lg:flex print-col-2 ${mobileTab === "skills" ? "flex" : "hidden"}`}
           >
             <Section
               title="Skills"
@@ -569,7 +569,7 @@ export function CharacterSheet({ char }: Props) {
 
           {/* COLUMN 3: Actions & Details */}
           <div
-            className={`flex-1 min-w-0 order-1 lg:order-3 print:flex print:flex-col print:w-full print:static print:order-3 print:mt-4 ${["actions", "inventory", "spells", "features"].includes(mobileTab) ? "flex flex-col" : "hidden md:flex lg:flex"}`}
+            className={`flex-1 min-w-0 order-1 lg:order-3 print-col-3 relative ${["actions", "inventory", "spells", "features"].includes(mobileTab) ? "flex flex-col" : "hidden md:flex lg:flex"}`}
           >
             <div className="flex flex-col w-full h-full lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 print:static print:h-auto">
               {/* Desktop Tab Navigation for Right Column */}
@@ -687,7 +687,7 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Inventory"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.currency && (
                     <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 sticky top-0 z-10 shadow-sm p-1.5 md:p-2 print:static print:bg-white print:border-b">
@@ -725,7 +725,7 @@ export function CharacterSheet({ char }: Props) {
                       </div>
                     </div>
                   )}
-                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative print:overflow-visible print:h-auto print:min-h-0">
+                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative print-overflow-visible print-3-cols">
                     {char.inventory.length > 0 ? (
                       char.inventory.map((item, idx) => (
                         <div
@@ -765,7 +765,7 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Spells"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.spellcasting && (
                     <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 text-sm font-bold font-fantasy tabular-nums tracking-tighter shadow-sm z-10 sticky top-0 p-1.5 md:p-2 print:static print:bg-white print:border-b">
@@ -777,7 +777,7 @@ export function CharacterSheet({ char }: Props) {
                       </span>
                     </div>
                   )}
-                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1 print:overflow-visible print:h-auto">
+                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1 print-overflow-visible print-3-cols">
                     {(() => {
                       const groupedSpells = Array.from(
                         { length: 10 },
@@ -963,9 +963,9 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Features & Traits"
-                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
                 >
-                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print:overflow-visible print:h-auto">
+                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print-overflow-visible print-3-cols">
                     {localResources && localResources.length > 0 && (
                       <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm print:bg-white print:border-gray-300 print:break-inside-avoid">
                         {localResources.map((res, i) => (

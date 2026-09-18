@@ -62,4 +62,63 @@ body {
     break-after: avoid !important;
     page-break-after: avoid !important;
   }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  /* 3-Column Print Structure */
+  .print-header-show {
+    display: flex !important;
+  }
+  .print-top-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+  .print-col-1 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 30% !important;
+    flex-shrink: 0 !important;
+    order: 1 !important;
+  }
+  .print-col-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 33% !important;
+    flex-shrink: 0 !important;
+    order: 2 !important;
+  }
+  .print-col-3 {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    order: 3 !important;
+  }
+  .print-section-show {
+    display: flex !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .print-3-cols {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .print-overflow-visible {
+    overflow: visible !important;
+    height: auto !important;
+  }
 }
