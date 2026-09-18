@@ -18,31 +18,58 @@ function characterPlugin() {
     load(id: string) {
       if (id === resolvedVirtualModuleId) {
         const charactersDir = path.resolve(__dirname, "public/characters");
-        let files: string[] = [];
-        try {
-          files = fs
-            .readdirSync(charactersDir)
-            .filter((f) => f.endsWith(".json"));
-        } catch (e) {
-          console.warn("Could not read characters folder");
-        }
+        const characters: {
+          filename: string;
+          id: string;
+          name: string;
+          folder: string;
+          updatedAt: string;
+        }[] = [];
 
-        const characters = files.map((file) => {
-          const filePath = path.join(charactersDir, file);
-          const stat = fs.statSync(filePath);
-          let charName = file.replace(".json", "");
-          let idName = charName;
+        const collectFiles = (dir: string, folder: string) => {
+          let entries: fs.Dirent[] = [];
           try {
-            const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-            if (data.name) charName = data.name;
-          } catch (e) {}
+            entries = fs.readdirSync(dir, { withFileTypes: true });
+          } catch (e) {
+            console.warn("Could not read characters folder");
+            return;
+          }
 
-          return {
-            filename: file,
-            id: file.replace(".json", ""),
-            name: charName,
-            updatedAt: stat.mtime.toISOString(),
-          };
+          for (const entry of entries) {
+            const fullPath = path.join(dir, entry.name);
+            if (entry.isDirectory()) {
+              collectFiles(fullPath, folder || entry.name);
+            } else if (entry.isFile() && entry.name.endsWith(".json")) {
+              const id = path
+                .relative(charactersDir, fullPath)
+                .replace(/\.json$/, "")
+                .split(path.sep)
+                .join("/");
+              const stat = fs.statSync(fullPath);
+              let charName = entry.name.replace(".json", "");
+              try {
+                const data = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
+                if (data.name) charName = data.name;
+              } catch (e) {}
+
+              characters.push({
+                filename: entry.name,
+                id,
+                name: charName,
+                folder: folder || "Misc",
+                updatedAt: stat.mtime.toISOString(),
+              });
+            }
+          }
+        };
+
+        collectFiles(charactersDir, "");
+        characters.sort((a, b) => {
+          if (a.folder === "Misc" && b.folder !== "Misc") return 1;
+          if (b.folder === "Misc" && a.folder !== "Misc") return -1;
+          const folderCmp = a.folder.localeCompare(b.folder, "en");
+          if (folderCmp !== 0) return folderCmp;
+          return a.name.localeCompare(b.name, "en");
         });
 
         return `export const characters = ${JSON.stringify(characters)};`;

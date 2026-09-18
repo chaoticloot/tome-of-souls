@@ -12,6 +12,40 @@ import { characters } from "virtual:characters";
 
 const characterCache: Record<string, ParsedCharacter> = {};
 
+interface CharacterMeta {
+  id: string;
+  name?: string;
+  folder: string;
+  updatedAt: string;
+}
+
+interface CharacterGroup {
+  folder: string;
+  items: CharacterMeta[];
+}
+
+function groupCharacters(list: CharacterMeta[]): CharacterGroup[] {
+  const groups = new Map<string, CharacterMeta[]>();
+  for (const c of list) {
+    const arr = groups.get(c.folder);
+    if (arr) arr.push(c);
+    else groups.set(c.folder, [c]);
+  }
+
+  const grouped = Array.from(groups.entries()).map(([folder, items]) => ({
+    folder,
+    items,
+  }));
+
+  grouped.sort((a, b) => {
+    if (a.folder === "Misc" && b.folder !== "Misc") return 1;
+    if (b.folder === "Misc" && a.folder !== "Misc") return -1;
+    return a.folder.localeCompare(b.folder, "en");
+  });
+
+  return grouped;
+}
+
 function preloadCharacter(id: string) {
   if (characterCache[id]) return;
   fetch(`${import.meta.env.BASE_URL}characters/${id}.json`)
@@ -134,17 +168,25 @@ function MainUI() {
                 <option value="" disabled className="text-gray-400 bg-gray-900">
                   Switch Character...
                 </option>
-                {characters
-                  .filter((c) => c.id !== currentId)
-                  .map((c) => (
-                    <option
-                      key={c.id}
-                      value={c.id}
-                      className="text-gray-200 bg-gray-900"
-                    >
-                      {c.name || c.id}
-                    </option>
-                  ))}
+                {groupCharacters(
+                  characters.filter((c) => c.id !== currentId),
+                ).map((group) => (
+                  <optgroup
+                    key={group.folder}
+                    label={group.folder}
+                    className="bg-gray-900 text-gray-200"
+                  >
+                    {group.items.map((c) => (
+                      <option
+                        key={c.id}
+                        value={c.id}
+                        className="text-gray-200 bg-gray-900"
+                      >
+                        {c.name || c.id}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
                 <option value="upload" className="text-gray-200 bg-gray-900">
                   Upload Local JSON...
                 </option>
@@ -162,24 +204,35 @@ function MainUI() {
                 <h2 className="text-2xl font-serif font-bold mb-6 text-center text-dnd-darkred flex items-center justify-center gap-2">
                   <Users className="w-6 h-6" /> Available Characters
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                  {characters.map((c) => (
-                    <button
-                      key={c.id}
-                      onClick={() => loadCharacterById(c.id)}
-                      className="flex flex-col items-center justify-center p-8 bg-white border-2 border-transparent hover:border-dnd-red rounded-xl shadow-md hover:shadow-xl transition-all group cursor-pointer"
-                    >
-                      <span className="text-2xl font-serif font-bold text-dnd-ink group-hover:text-dnd-darkred mb-2 text-center h-16 flex items-center">
-                        {c.name || c.id}
-                      </span>
-                      <span className="text-xs text-gray-400">
-                        {new Date(c.updatedAt).toLocaleDateString()}{" "}
-                        {new Date(c.updatedAt).toLocaleTimeString([], {
-                          hour: "2-digit",
-                          minute: "2-digit",
-                        })}
-                      </span>
-                    </button>
+                <div className="flex flex-col gap-8">
+                  {groupCharacters(characters).map((group) => (
+                    <div key={group.folder}>
+                      <h3 className="text-sm font-serif font-bold uppercase tracking-widest text-dnd-darkred/80 mb-4 flex items-center justify-center gap-2">
+                        <span className="border-t border-gray-400/60 flex-1 max-w-[120px]"></span>
+                        <span>{group.folder}</span>
+                        <span className="border-t border-gray-400/60 flex-1 max-w-[120px]"></span>
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        {group.items.map((c) => (
+                          <button
+                            key={c.id}
+                            onClick={() => loadCharacterById(c.id)}
+                            className="flex flex-col items-center justify-center p-8 bg-white border-2 border-transparent hover:border-dnd-red rounded-xl shadow-md hover:shadow-xl transition-all group cursor-pointer"
+                          >
+                            <span className="text-2xl font-serif font-bold text-dnd-ink group-hover:text-dnd-darkred mb-2 text-center h-16 flex items-center">
+                              {c.name || c.id}
+                            </span>
+                            <span className="text-xs text-gray-400">
+                              {new Date(c.updatedAt).toLocaleDateString()}{" "}
+                              {new Date(c.updatedAt).toLocaleTimeString([], {
+                                hour: "2-digit",
+                                minute: "2-digit",
+                              })}
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
