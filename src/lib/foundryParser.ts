@@ -198,10 +198,16 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
         if (hpAdv?.value) {
             Object.keys(hpAdv.value).forEach((lvlStr) => {
                const val = hpAdv.value[lvlStr];
+               const denom = parseInt(hdDenom, 10) || 8;
                if (val === 'max') {
-                  baseHpFromAdvancement += parseInt(hdDenom, 10);
-               } else {
-                  baseHpFromAdvancement += parseInt(val || 0, 10);
+                  baseHpFromAdvancement += denom;
+               } else if (val === 'avg') {
+                  baseHpFromAdvancement += Math.floor(denom / 2) + 1;
+               } else if (val) {
+                  const numVal = parseInt(String(val), 10);
+                  if (!isNaN(numVal)) {
+                     baseHpFromAdvancement += numVal;
+                  }
                }
             });
         }
@@ -222,7 +228,7 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
 
   const conMod = abilities['con']?.mod || 0;
 
-  // 3. Compute Max HP
+  // 3. Compute Max HP & AC modifiers
   let hpBonusOverallNum = parseInt(sys.attributes?.hp?.bonuses?.overall as string, 10);
   if (isNaN(hpBonusOverallNum)) hpBonusOverallNum = 0;
   
@@ -231,6 +237,8 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
 
   let hasDwarvenToughness = false;
   let hasDefenseStyle = false;
+  let hasArcheryStyle = false;
+  let hasDraconicResilience = false;
   let initialAC = 10 + (abilities['dex']?.mod || 0); // Unarmored base
   let hasArmor = false;
   let armorBonus = 0;
@@ -238,9 +246,22 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
 
   if (Array.isArray(json.items)) {
     json.items.forEach((item: any) => {
-      if ((item.type === 'feat' || item.type === 'feature')) {
-         if (item.name.toLowerCase() === 'dwarven toughness') hasDwarvenToughness = true;
-         if (item.name.toLowerCase() === 'fighting style: defense') hasDefenseStyle = true;
+      const nameLower = (item.name || '').toLowerCase();
+      const subLower = (item.system?.subclass || '').toLowerCase();
+      const idLower = (item.system?.identifier || '').toLowerCase();
+
+      if (item.type === 'feat' || item.type === 'feature' || item.type === 'subclass' || item.type === 'class') {
+         if (nameLower === 'dwarven toughness') hasDwarvenToughness = true;
+         if (nameLower.includes('fighting style: defense') || nameLower === 'defense') hasDefenseStyle = true;
+         if (nameLower.includes('fighting style: archery') || nameLower.includes('archery')) hasArcheryStyle = true;
+         if (
+           nameLower.includes('draconic resilience') ||
+           nameLower.includes('draconic bloodline') ||
+           subLower.includes('draconic') ||
+           idLower.includes('draconic')
+         ) {
+           hasDraconicResilience = true;
+         }
       }
       if (item.type === 'equipment' && item.system?.equipped) {
         const typeStr = (item.system?.type?.value || '').toLowerCase();
@@ -267,25 +288,38 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
   if (hasDwarvenToughness) {
     hpBonusLevelNum += 1;
   }
+  if (hasDraconicResilience) {
+    hpBonusLevelNum += 1;
+  }
 
   const totalHpBonus = hpBonusOverallNum + (hpBonusLevelNum * totalLevel);
 
-  let computedHpMax = sys.attributes?.hp?.max || 0;
-  if (!computedHpMax || (baseHpFromAdvancement > 0 && computedHpMax < baseHpFromAdvancement)) {
+  let rawSysHpMax = parseInt(sys.attributes?.hp?.max as string, 10);
+  let computedHpMax = !isNaN(rawSysHpMax) ? rawSysHpMax : 0;
+
+  if (computedHpMax <= 0 || (baseHpFromAdvancement > 0 && computedHpMax < baseHpFromAdvancement)) {
       computedHpMax = baseHpFromAdvancement + (totalLevel * conMod) + totalHpBonus;
   } else {
       computedHpMax += totalHpBonus;
   }
-  if (computedHpMax === 0) computedHpMax = sys.attributes?.hp?.value || 10;
+
+  if (isNaN(computedHpMax) || computedHpMax <= 0) {
+      const rawSysHpVal = parseInt(sys.attributes?.hp?.value as string, 10);
+      computedHpMax = (!isNaN(rawSysHpVal) && rawSysHpVal > 0) ? rawSysHpVal : 10;
+  }
+
+  if (hasDraconicResilience && !hasArmor) {
+      initialAC = Math.max(initialAC, 13 + (abilities['dex']?.mod || 0));
+  }
 
   let calculatedAC = hasArmor ? armorBonus + shieldBonus : initialAC + shieldBonus;
-  if (hasDefenseStyle && hasArmor) calculatedAC += 1;
-  else if (hasDefenseStyle) calculatedAC += 1; // Sometimes it's best to apply it unconditionally if the app isn't perfectly parsing armor status
+  if (hasDefenseStyle && (hasArmor || calculatedAC > 10)) calculatedAC += 1;
   
-  let finalAC = sys.attributes?.ac?.value || 10;
+  let rawSysAC = parseInt(sys.attributes?.ac?.value as string, 10);
+  let finalAC = !isNaN(rawSysAC) ? rawSysAC : 10;
   if (finalAC === 10 && calculatedAC > 10) {
       finalAC = calculatedAC;
-  } else if (!sys.attributes?.ac?.value || finalAC < calculatedAC) {
+  } else if (isNaN(finalAC) || finalAC < calculatedAC) {
       finalAC = calculatedAC;
   }
 
@@ -439,7 +473,10 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
          const wpnType = item.system?.type?.value || '';
          const props = item.system?.properties || [];
          const isFinesse = Array.isArray(props) ? props.includes('fin') : props.fin;
-         const isRanged = wpnType.includes('R') || (Array.isArray(props) ? props.includes('ran') : props.amm);
+         const isRanged = wpnType.includes('R') || 
+                          wpnType.toLowerCase().includes('ranged') || 
+                          (Array.isArray(props) ? (props.includes('ran') || props.includes('amm')) : (props.ran || props.amm)) || 
+                          item.system?.actionType === 'rwak';
          
          // Assuming proficiency for weapons inside the sheet as standard
          const isProf = item.system?.proficient === false ? false : true;
@@ -488,6 +525,10 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
                }
                damageFormula = `${f} ${v2parts[0][1] || ''}`;
             }
+         }
+
+         if (hasArcheryStyle && isRanged) {
+            atkBonusNum += 2;
          }
 
          let baseDmgStr = '';
