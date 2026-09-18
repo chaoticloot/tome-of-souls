@@ -190,7 +190,7 @@ export function CharacterSheet({ char }: Props) {
     <div className="max-w-[1200px] w-full mx-auto bg-[#1b1c22] text-gray-300 shadow-xl print:shadow-none print:bg-white print:text-black my-0 lg:my-8 pb-0 lg:pb-8 print:p-0 print:m-0 border-0 lg:border-4 border-black print:border-dnd-border relative">
       {/* Header Section (Dark themed) */}
       <div
-        className={`bg-[#1b1c22] border-b-0 lg:border-b-2 border-red-800 p-4 md:p-6 flex-col md:flex-row gap-4 md:gap-6 items-end print:bg-white print:text-black print:border-dnd-border ${mobileTab === "main" ? "flex" : "hidden lg:flex"}`}
+        className={`bg-[#1b1c22] border-b-0 lg:border-b-2 border-red-800 p-4 md:p-6 flex-col md:flex-row gap-4 md:gap-6 items-end print:bg-white print:text-black print:border-b print:border-dnd-border print:flex ${mobileTab === "main" ? "flex" : "hidden lg:flex"}`}
       >
         {/* Name Area */}
         <div className="flex-1 flex justify-between items-start">
@@ -237,14 +237,14 @@ export function CharacterSheet({ char }: Props) {
         ))}
       </div>
 
-      <div className="p-4 md:p-6 lg:bg-transparent bg-[#1b1c22] pb-0 lg:pb-6">
+      <div className="p-4 md:p-6 lg:bg-transparent bg-[#1b1c22] pb-0 lg:pb-6 print:p-0">
         {/* Top Stats Array */}
         <div
-          className={`flex-col lg:flex-row gap-4 mb-4 lg:mb-6 items-center lg:items-stretch lg:flex lg:flex-nowrap ${mobileTab === "main" ? "flex" : "hidden"}`}
+          className={`flex-col lg:flex-row gap-4 mb-4 lg:mb-6 items-center lg:items-stretch lg:flex lg:flex-nowrap print:flex print:flex-row print:gap-3 print:mb-3 ${mobileTab === "main" ? "flex" : "hidden"}`}
         >
           {/* Abilities Grid */}
           <div
-            className={`order-2 lg:order-1 w-full lg:w-[50%] lg:max-w-[50%] grid grid-cols-3 lg:grid-cols-6 print:flex justify-center place-items-stretch gap-2 lg:gap-1.5 bg-[#23242a] p-2 md:p-3 lg:p-2 rounded-lg border border-gray-700 shadow-md print:bg-transparent print:border-0 print:p-0 shrink-0`}
+            className={`order-2 lg:order-1 w-full lg:w-[50%] lg:max-w-[50%] grid grid-cols-3 lg:grid-cols-6 print:flex print:flex-row print:w-auto print:max-w-none justify-center place-items-stretch gap-2 lg:gap-1.5 bg-[#23242a] p-2 md:p-3 lg:p-2 rounded-lg border border-gray-700 shadow-md print:bg-transparent print:border-0 print:p-0 shrink-0`}
           >
             {Object.entries(char.abilities).map(([key, ability]) => (
               <div
@@ -270,10 +270,10 @@ export function CharacterSheet({ char }: Props) {
             ))}
           </div>
 
-          <div className="order-1 lg:order-2 flex gap-4 w-full lg:flex-1 flex-col lg:flex-row overflow-hidden lg:overflow-visible">
+          <div className="order-1 lg:order-2 flex gap-4 w-full lg:flex-1 flex-col lg:flex-row overflow-hidden lg:overflow-visible print:flex-row print:overflow-visible">
             {/* Core Stats Bar */}
-            <div className="grid grid-cols-4 lg:grid-cols-2 gap-2 w-full lg:w-auto lg:flex-1 order-2 lg:order-1">
-              <div className="border border-red-800 bg-[#23242a] print:bg-white rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+            <div className="grid grid-cols-4 lg:grid-cols-2 gap-2 w-full lg:w-auto lg:flex-1 order-2 lg:order-1 print:flex print:flex-row print:gap-2">
+              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider leading-tight">
                   Prof Bonus
                 </span>
@@ -282,7 +282,7 @@ export function CharacterSheet({ char }: Props) {
                 </div>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider leading-tight">
                   Speed
                 </span>
@@ -296,7 +296,7 @@ export function CharacterSheet({ char }: Props) {
                 </div>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider mb-0 md:mb-1 lg:mb-0">
                   Init
                 </span>
@@ -308,7 +308,7 @@ export function CharacterSheet({ char }: Props) {
                 </button>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16 relative overflow-hidden">
+              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16 relative overflow-hidden">
                 <Shield className="absolute inset-0 m-auto w-10 md:w-12 lg:w-10 h-10 md:h-12 lg:h-10 text-gray-700 print:text-gray-200 opacity-30" />
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider mb-0 md:mb-1 lg:mb-0 relative z-10 leading-tight">
                   AC
@@ -320,7 +320,7 @@ export function CharacterSheet({ char }: Props) {
             </div>
 
             {/* Hit Points Box */}
-            <div className="flex-1 lg:flex-none lg:w-[240px] order-1 md:order-2 border border-red-800 bg-[#23242a] print:bg-white rounded-lg p-2 md:p-3 lg:p-2 flex flex-col relative justify-center min-h-[4.5rem] lg:min-h-0 bg-gradient-to-br from-[#23242a] to-[#1a1b20]">
+            <div className="flex-1 lg:flex-none lg:w-[240px] order-1 md:order-2 border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-2 md:p-3 lg:p-2 flex flex-col relative justify-center min-h-[4.5rem] lg:min-h-0 bg-gradient-to-br from-[#23242a] to-[#1a1b20] print:bg-none">
               <table className="w-full text-center mt-0 mb-1 lg:mb-2 lg:mt-1">
                 <thead>
                   <tr className="text-[10px] text-gray-400 uppercase font-bold tracking-wider print:text-gray-500">
@@ -345,13 +345,13 @@ export function CharacterSheet({ char }: Props) {
                     <td className="text-2xl lg:text-xl text-gray-600 align-bottom pb-1 lg:pb-0.5 px-1">
                       /
                     </td>
-                    <td className="text-3xl lg:text-2xl font-bold text-gray-400 align-bottom pb-1 lg:pb-0.5">
+                    <td className="text-3xl lg:text-2xl font-bold text-gray-400 print:text-black align-bottom pb-1 lg:pb-0.5">
                       {char.hp.max}
                     </td>
                     <td className="align-bottom pb-1 lg:pb-0.5">
                       <input
                         type="number"
-                        className="w-12 lg:w-10 bg-transparent text-2xl lg:text-xl font-bold text-center text-blue-400 focus:outline-none p-0 m-0"
+                        className="w-12 lg:w-10 bg-transparent text-2xl lg:text-xl font-bold text-center text-blue-400 print:text-black focus:outline-none p-0 m-0"
                         value={tempHp || ""}
                         placeholder="--"
                         onChange={(e) => setTempHp(Number(e.target.value))}
@@ -360,7 +360,7 @@ export function CharacterSheet({ char }: Props) {
                   </tr>
                 </tbody>
               </table>
-              <div className="absolute -bottom-2 md:-bottom-2.5 right-4 bg-[#23242a] px-2 text-[10px] md:text-xs text-gray-400 uppercase font-bold border border-red-800 rounded print:bg-white print:text-dnd-ink">
+              <div className="absolute -bottom-2 md:-bottom-2.5 right-4 bg-[#23242a] px-2 text-[10px] md:text-xs text-gray-400 uppercase font-bold border border-red-800 rounded print:bg-white print:text-dnd-ink print:border-dnd-border">
                 Hit Points
               </div>
             </div>
@@ -368,10 +368,10 @@ export function CharacterSheet({ char }: Props) {
         </div>
 
         {/* 3 Column Layout */}
-        <div className="flex flex-col lg:flex-row gap-6 print:flex-row print:flex-wrap items-stretch">
+        <div className="flex flex-col lg:flex-row gap-6 print:flex-row print:flex-wrap print:gap-4 items-stretch print:items-start">
           {/* COLUMN 1: Saves & Details */}
           <div
-            className={`w-full lg:w-60 flex-shrink-0 flex-col gap-4 order-2 lg:order-1 lg:flex print:flex ${mobileTab === "main" ? "flex" : "hidden"}`}
+            className={`w-full lg:w-60 flex-shrink-0 flex-col gap-4 order-2 lg:order-1 lg:flex print:flex print:w-[210px] print:order-1 ${mobileTab === "main" ? "flex" : "hidden"}`}
           >
             <Section
               title="Saving Throws"
@@ -514,7 +514,7 @@ export function CharacterSheet({ char }: Props) {
 
           {/* COLUMN 2: Skills */}
           <div
-            className={`w-full lg:w-72 flex-shrink-0 flex-col gap-4 order-3 lg:order-2 lg:flex print:flex ${mobileTab === "skills" ? "flex" : "hidden"}`}
+            className={`w-full lg:w-72 flex-shrink-0 flex-col gap-4 order-3 lg:order-2 lg:flex print:flex print:w-[240px] print:order-2 ${mobileTab === "skills" ? "flex" : "hidden"}`}
           >
             <Section
               title="Skills"
@@ -535,7 +535,7 @@ export function CharacterSheet({ char }: Props) {
                   return (
                     <div
                       key={skill.key}
-                      className="border-b border-gray-100 py-1.5 flex items-center last:border-0 hover:bg-gray-100 cursor-pointer transition-colors group"
+                      className="border-b border-gray-100 py-1.5 flex items-center last:border-0 hover:bg-gray-100 cursor-pointer transition-colors group print:break-inside-avoid"
                       onClick={() => handleRoll(`${skill.label} Check`, sk.mod)}
                     >
                       <div className="w-8 flex justify-center">
@@ -569,9 +569,9 @@ export function CharacterSheet({ char }: Props) {
 
           {/* COLUMN 3: Actions & Details */}
           <div
-            className={`flex-1 min-w-0 order-1 lg:order-3 print:flex print:flex-col relative ${["actions", "inventory", "spells", "features"].includes(mobileTab) ? "flex flex-col" : "hidden md:flex lg:flex"}`}
+            className={`flex-1 min-w-0 order-1 lg:order-3 print:flex print:flex-col print:w-full print:static print:order-3 print:mt-4 ${["actions", "inventory", "spells", "features"].includes(mobileTab) ? "flex flex-col" : "hidden md:flex lg:flex"}`}
           >
-            <div className="flex flex-col w-full h-full lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 print:relative">
+            <div className="flex flex-col w-full h-full lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 print:static print:h-auto">
               {/* Desktop Tab Navigation for Right Column */}
               <div className="hidden lg:grid grid-cols-4 gap-2 print:hidden mb-4 mt-0 shrink-0">
                 {[
@@ -591,12 +591,12 @@ export function CharacterSheet({ char }: Props) {
               </div>
 
               {/* Tab Content scrolling container */}
-              <div className="flex-1 overflow-visible lg:overflow-hidden p-0 relative flex flex-col min-h-0 lg:min-h-0 h-auto">
+              <div className="flex-1 overflow-visible lg:overflow-hidden p-0 relative flex flex-col min-h-0 lg:min-h-0 h-auto print:static print:h-auto print:overflow-visible print:block print:space-y-4">
                 <Section
                   title="Actions & Attacks"
-                  className={`rounded border-gray-700 bg-white text-black h-fit lg:h-full flex-1 print:flex ${mobileTab === "actions" ? "flex" : "hidden md:hidden"} ${desktopTab === "actions" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-fit lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "actions" ? "flex" : "hidden md:hidden"} ${desktopTab === "actions" ? "lg:flex" : "lg:hidden"}`}
                 >
-                  <div className="overflow-visible lg:overflow-y-auto flex-1 min-h-0 w-full relative">
+                  <div className="overflow-visible lg:overflow-y-auto flex-1 min-h-0 w-full relative print:overflow-visible print:h-auto">
                     <table className="w-full text-[11px] text-left border-collapse">
                       <thead>
                         <tr className="border-b-2 border-gray-800 font-bold uppercase text-[9px] text-gray-500">
@@ -618,7 +618,7 @@ export function CharacterSheet({ char }: Props) {
                           return (
                             <tr
                               key={idx}
-                              className="border-b border-gray-200 last:border-0 hover:bg-gray-50 transition-colors"
+                              className="border-b border-gray-200 last:border-0 hover:bg-gray-50 transition-colors print:break-inside-avoid"
                             >
                               <td className="p-2">
                                 <div className="font-bold text-black">
@@ -687,10 +687,10 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Inventory"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:flex print:h-auto ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.currency && (
-                    <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 sticky top-0 z-10 shadow-sm p-1.5 md:p-2">
+                    <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 sticky top-0 z-10 shadow-sm p-1.5 md:p-2 print:static print:bg-white print:border-b">
                       <div className="flex gap-2 text-[10px] md:text-xs font-bold font-fantasy tabular-nums tracking-tighter shrink-0 w-full justify-around md:justify-start md:gap-4 lg:gap-8">
                         <span
                           className="bg-slate-200 text-slate-800 px-2 py-1 rounded border border-slate-300"
@@ -725,12 +725,12 @@ export function CharacterSheet({ char }: Props) {
                       </div>
                     </div>
                   )}
-                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative">
+                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative print:overflow-visible print:h-auto print:min-h-0">
                     {char.inventory.length > 0 ? (
                       char.inventory.map((item, idx) => (
                         <div
                           key={idx}
-                          className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0 hover:bg-gray-100 cursor-pointer transition-colors px-2 rounded group"
+                          className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0 hover:bg-gray-100 cursor-pointer transition-colors px-2 rounded group print:break-inside-avoid"
                           onClick={() => setSelectedItem(item)}
                         >
                           <div className="flex items-center gap-2">
@@ -765,10 +765,10 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Spells"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:flex print:h-auto ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.spellcasting && (
-                    <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 text-sm font-bold font-fantasy tabular-nums tracking-tighter shadow-sm z-10 sticky top-0 p-1.5 md:p-2">
+                    <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 text-sm font-bold font-fantasy tabular-nums tracking-tighter shadow-sm z-10 sticky top-0 p-1.5 md:p-2 print:static print:bg-white print:border-b">
                       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded shadow-sm border border-blue-200">
                         Spell DC: {char.spellcasting.dc}
                       </span>
@@ -777,7 +777,7 @@ export function CharacterSheet({ char }: Props) {
                       </span>
                     </div>
                   )}
-                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1">
+                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1 print:overflow-visible print:h-auto">
                     {(() => {
                       const groupedSpells = Array.from(
                         { length: 10 },
@@ -795,7 +795,7 @@ export function CharacterSheet({ char }: Props) {
                         <>
                           {/* Pact Magic */}
                           {localSlots["pact"] && localSlots["pact"].max > 0 && (
-                            <div className="flex flex-col break-inside-avoid">
+                            <div className="flex flex-col break-inside-avoid print:break-inside-avoid">
                               <div className="flex justify-between items-end border-b-2 border-purple-400 pb-1 mb-1 mt-2">
                                 <span className="font-bold text-[#4B0082] uppercase tracking-widest text-xs">
                                   Pact Magic (Level{" "}
@@ -848,7 +848,7 @@ export function CharacterSheet({ char }: Props) {
                             return (
                               <div
                                 key={level}
-                                className="flex flex-col break-inside-avoid"
+                                className="flex flex-col break-inside-avoid print:break-inside-avoid"
                               >
                                 <div className="flex justify-between items-end border-b-2 border-gray-300 pb-1 mb-1 mt-2">
                                   <span className="font-bold text-[#802B27] uppercase tracking-widest text-xs">
@@ -870,7 +870,7 @@ export function CharacterSheet({ char }: Props) {
                                                 1,
                                               )
                                             }
-                                            className="px-1.5 py-0.5 border border-gray-300 rounded hover:bg-gray-100 font-bold"
+                                            className="px-1.5 py-0.5 border border-gray-300 rounded hover:bg-gray-100 font-bold print:hidden"
                                           >
                                             +
                                           </button>
@@ -884,7 +884,7 @@ export function CharacterSheet({ char }: Props) {
                                                 -1,
                                               )
                                             }
-                                            className="px-1.5 py-0.5 border border-gray-300 rounded hover:bg-gray-100 font-bold"
+                                            className="px-1.5 py-0.5 border border-gray-300 rounded hover:bg-gray-100 font-bold print:hidden"
                                           >
                                             -
                                           </button>
@@ -926,7 +926,7 @@ export function CharacterSheet({ char }: Props) {
                                 {spellsArr.map((s, idx) => (
                                   <div
                                     key={idx}
-                                    className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0 hover:bg-gray-100 cursor-pointer transition-colors px-2 rounded group"
+                                    className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0 hover:bg-gray-100 cursor-pointer transition-colors px-2 rounded group print:break-inside-avoid"
                                     onClick={() => setSelectedSpell(s)}
                                   >
                                     <div className="flex items-center gap-2">
@@ -963,11 +963,11 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Features & Traits"
-                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print:block print:max-h-none ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print:!flex print:h-auto print:w-full print:break-inside-avoid ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
                 >
-                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative">
+                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print:overflow-visible print:h-auto">
                     {localResources && localResources.length > 0 && (
-                      <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm">
+                      <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm print:bg-white print:border-gray-300 print:break-inside-avoid">
                         {localResources.map((res, i) => (
                           <div key={i} className="flex flex-col gap-2">
                             <div className="flex justify-between items-center text-xs font-bold text-gray-700 tracking-wider">
@@ -981,7 +981,7 @@ export function CharacterSheet({ char }: Props) {
                                 <div className="flex items-center gap-3 w-full justify-end">
                                   <button
                                     onClick={() => updateResourceValue(i, 1)}
-                                    className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 font-bold bg-white shadow-sm transition-colors"
+                                    className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 font-bold bg-white shadow-sm transition-colors print:hidden"
                                   >
                                     +
                                   </button>
@@ -990,7 +990,7 @@ export function CharacterSheet({ char }: Props) {
                                   </span>
                                   <button
                                     onClick={() => updateResourceValue(i, -1)}
-                                    className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 font-bold bg-white shadow-sm transition-colors"
+                                    className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 font-bold bg-white shadow-sm transition-colors print:hidden"
                                   >
                                     -
                                   </button>

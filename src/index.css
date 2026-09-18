@@ -5,8 +5,8 @@
 }
 
 @theme {
-  --font-fantasy: "Cinzel", "Crimson Pro", ui-serif, serif;
-  --font-serif: "Crimson Pro", ui-serif, serif;
+  --font-fantasy: "Cinzel", "Lora", "Crimson Pro", ui-serif, serif;
+  --font-serif: "Lora", "Crimson Pro", ui-serif, serif;
   --font-mono: "Courier New", ui-monospace, SFMono-Regular, monospace;
 }
 
@@ -37,21 +37,29 @@
 body {
   background-color: #fcfaf2;
   color: #1a1a1a;
+  font-family: var(--font-serif);
   print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 @media print {
   @page {
-    margin: 10mm;
-    size: auto;
+    margin: 8mm;
+    size: A4 portrait;
   }
   body {
-    background-color: white;
+    background-color: white !important;
+    color: black !important;
   }
   .no-print {
     display: none !important;
   }
   .print-break-inside-avoid {
-    break-inside: avoid;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .print-break-after-avoid {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
   }
 }
