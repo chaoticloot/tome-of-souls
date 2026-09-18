@@ -125,6 +125,7 @@ body {
     width: 100% !important;
     flex-basis: 100% !important;
     margin-top: 14px !important;
+    order: 4 !important;
   }
   .print-2-cols {
     display: grid !important;

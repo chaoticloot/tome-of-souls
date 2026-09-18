@@ -2,7 +2,20 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import fs from "fs";
+import { execSync } from "child_process";
 import { defineConfig, loadEnv } from "vite";
+
+function gitLastCommitDate(relPath: string): string {
+  try {
+    const out = execSync(
+      `git log -1 --format=%cI -- "${relPath}"`,
+      { encoding: "utf-8", cwd: path.resolve(__dirname) },
+    ).trim();
+    return out || "";
+  } catch {
+    return "";
+  }
+}
 
 function characterPlugin() {
   const virtualModuleId = "virtual:characters";
@@ -52,12 +65,15 @@ function characterPlugin() {
                 if (data.name) charName = data.name;
               } catch (e) {}
 
+              const gitRel = path.relative(path.resolve(__dirname), fullPath);
+              const fromGit = gitLastCommitDate(gitRel);
+
               characters.push({
                 filename: entry.name,
                 id,
                 name: charName,
                 folder: folder || "Misc",
-                updatedAt: stat.mtime.toISOString(),
+                updatedAt: fromGit || stat.mtime.toISOString(),
               });
             }
           }

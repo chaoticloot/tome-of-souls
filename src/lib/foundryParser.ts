@@ -147,6 +147,24 @@ export function parseEnrichers(text: string): string {
      return `<strong class="text-emerald-700 capitalize font-sans">[${c}]</strong>`;
   });
   
+  parsed = parsed.replace(/@([a-zA-Z]+)\[([^\]]*)\](?:\{([^}]*)\})?/g, (match, type, content, label) => {
+     if (type === 'Embed' && !label) return match;
+     let name = (label || '').trim();
+     if (!name) {
+        const first = (content.split('|')[0] || '').trim();
+        const hasPipe = content.includes('|');
+        if (!hasPipe && content.includes('.')) {
+           name = content.split('.').pop();
+        }
+        if (!name) name = first;
+        if (!name) name = type;
+     }
+     return `<a href="https://www.google.com/search?q=${encodeURIComponent('dnd ' + name)}" target="_blank" rel="noopener noreferrer" class="font-bold text-dnd-red underline" title="${match}">${name}</a>`;
+  });
+  
+  // Add a separating space after links (except before whitespace/punctuation/tags) so text never sticks together
+  parsed = parsed.replace(/<\/a>(?![\s.,;:!?)\]'"<])/g, '</a> ');
+  
   return parsed;
 }
 
@@ -387,7 +405,7 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
           quantity: item.system?.quantity || 1,
           weight: parsedWeight || 0,
           equipped: item.system?.equipped || false,
-          description: item.system?.description?.value || '',
+          description: parseEnrichers(item.system?.description?.value || ''),
           armorValue: item.system?.armor?.value,
           armorDexCap: item.system?.armor?.dex,
           isShield: typeStr === 'shield' || (item.name.toLowerCase() === 'shield' && !typeStr),
@@ -413,7 +431,7 @@ export function parseFoundryJSON(json: any): ParsedCharacter {
 
         features.push({
           name: item.name,
-          description: '<p>' + stripHtml(parseEnrichers(item.system?.description?.value || '')).substring(0, 500) + '...</p>',
+          description: parseEnrichers(item.system?.description?.value || ''),
           type: featType || 'Feature'
         });
       } 

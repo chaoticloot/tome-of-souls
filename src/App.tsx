@@ -24,6 +24,18 @@ interface CharacterGroup {
   items: CharacterMeta[];
 }
 
+const RU_MONTHS = [
+  "января", "февраля", "марта", "апреля", "мая", "июня",
+  "июля", "августа", "сентября", "октября", "ноября", "декабря",
+];
+
+function formatUpdatedAt(iso: string) {
+  const d = new Date(iso);
+  const hh = String(d.getHours()).padStart(2, "0");
+  const mm = String(d.getMinutes()).padStart(2, "0");
+  return `${d.getDate()} ${RU_MONTHS[d.getMonth()]} ${d.getFullYear()}, ${hh}:${mm}`;
+}
+
 function groupCharacters(list: CharacterMeta[]): CharacterGroup[] {
   const groups = new Map<string, CharacterMeta[]>();
   for (const c of list) {
@@ -223,11 +235,7 @@ function MainUI() {
                               {c.name || c.id}
                             </span>
                             <span className="text-xs text-gray-400">
-                              {new Date(c.updatedAt).toLocaleDateString()}{" "}
-                              {new Date(c.updatedAt).toLocaleTimeString([], {
-                                hour: "2-digit",
-                                minute: "2-digit",
-                              })}
+                              {formatUpdatedAt(c.updatedAt)}
                             </span>
                           </button>
                         ))}
