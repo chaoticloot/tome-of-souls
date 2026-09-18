@@ -73,7 +73,7 @@ body {
     appearance: textfield;
   }
 
-  /* 3-Column Print Structure */
+  /* 3-Column Top Grid (Page 1) */
   .print-header-show {
     display: flex !important;
   }
@@ -111,14 +111,33 @@ body {
     max-height: none !important;
     overflow: visible !important;
   }
-  .print-3-cols {
+
+  /* Full-width 100% sections for Spells, Features & Inventory */
+  .print-full-width {
+    display: block !important;
+    clear: both !important;
+    width: 100% !important;
+    margin-top: 14px !important;
+  }
+  .print-2-cols {
     display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 10px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
     width: 100% !important;
   }
   .print-overflow-visible {
     overflow: visible !important;
     height: auto !important;
+  }
+
+  /* Stat Box High Contrast Print */
+  .print-stat-text {
+    color: #000000 !important;
+  }
+  .print-stat-box {
+    background-color: #ffffff !important;
+    border-color: #9ca3af !important;
+    color: #000000 !important;
+    background-image: none !important;
   }
 }

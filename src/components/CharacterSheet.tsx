@@ -187,7 +187,7 @@ export function CharacterSheet({ char }: Props) {
   };
 
   return (
-    <div className="max-w-[1200px] w-full mx-auto bg-[#1b1c22] text-gray-300 shadow-xl print:shadow-none print:bg-white print:text-black my-0 lg:my-8 pb-0 lg:pb-8 print:p-0 print:m-0 border-0 lg:border-4 border-black print:border-dnd-border relative">
+    <div className="max-w-[1200px] w-full mx-auto bg-[#1b1c22] text-gray-300 shadow-xl print:shadow-none print:bg-white print:text-black my-0 lg:my-8 pb-0 lg:pb-8 print:p-0 print:m-0 border-0 lg:border-4 border-black print:border-none relative">
       {/* Header Section (Dark themed) */}
       <div
         className={`bg-[#1b1c22] border-b-0 lg:border-b-2 border-red-800 p-4 md:p-6 flex-col md:flex-row gap-4 md:gap-6 items-end print:bg-white print:text-black print:border-dnd-border print-header-show ${mobileTab === "main" ? "flex" : "hidden lg:flex"}`}
@@ -273,20 +273,20 @@ export function CharacterSheet({ char }: Props) {
           <div className="order-1 lg:order-2 flex gap-4 w-full lg:flex-1 flex-col lg:flex-row overflow-hidden lg:overflow-visible print:flex-row print:overflow-visible">
             {/* Core Stats Bar */}
             <div className="grid grid-cols-4 lg:grid-cols-2 gap-2 w-full lg:w-auto lg:flex-1 order-2 lg:order-1 print:flex print:flex-row print:gap-2">
-              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+              <div className="border border-red-800 bg-[#23242a] print-stat-box rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider leading-tight">
                   Prof Bonus
                 </span>
-                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print:text-dnd-ink leading-none mt-1">
+                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print-stat-text leading-none mt-1">
                   {formatMod(char.proficiencyBonus)}
                 </div>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+              <div className="border border-red-800 bg-[#23242a] print-stat-box rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider leading-tight">
                   Speed
                 </span>
-                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print:text-dnd-ink leading-none mt-1 flex items-baseline justify-center">
+                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print-stat-text leading-none mt-1 flex items-baseline justify-center">
                   {typeof char.speed === "object"
                     ? (char.speed as any).value || 30
                     : char.speed}{" "}
@@ -296,40 +296,40 @@ export function CharacterSheet({ char }: Props) {
                 </div>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
+              <div className="border border-red-800 bg-[#23242a] print-stat-box rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16">
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider mb-0 md:mb-1 lg:mb-0">
                   Init
                 </span>
                 <button
-                  className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print:text-dnd-ink leading-none bg-white/10 w-full rounded hover:bg-white/20 transition-colors py-0.5 md:py-1 lg:py-0.5"
+                  className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print-stat-text leading-none bg-white/10 print:bg-transparent w-full rounded hover:bg-white/20 transition-colors py-0.5 md:py-1 lg:py-0.5"
                   onClick={() => handleRoll("Initiative", char.initiative)}
                 >
                   {formatMod(char.initiative)}
                 </button>
               </div>
 
-              <div className="border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16 relative overflow-hidden">
-                <Shield className="absolute inset-0 m-auto w-10 md:w-12 lg:w-10 h-10 md:h-12 lg:h-10 text-gray-700 print:text-gray-200 opacity-30" />
+              <div className="border border-red-800 bg-[#23242a] print-stat-box rounded-lg p-1.5 md:p-2 lg:p-1.5 text-center flex-1 flex flex-col justify-center items-center h-16 md:h-[4.5rem] lg:h-auto min-w-16 md:min-w-20 lg:min-w-16 relative overflow-hidden">
+                <Shield className="absolute inset-0 m-auto w-10 md:w-12 lg:w-10 h-10 md:h-12 lg:h-10 text-gray-700 print:text-gray-300 opacity-30" />
                 <span className="uppercase text-[8px] md:text-[9px] lg:text-[8px] font-bold text-gray-400 print:text-dnd-red tracking-wider mb-0 md:mb-1 lg:mb-0 relative z-10 leading-tight">
                   AC
                 </span>
-                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print:text-dnd-ink leading-none mt-1 lg:mt-0 relative z-10">
+                <div className="font-serif text-xl md:text-2xl lg:text-xl font-bold text-white print-stat-text leading-none mt-1 lg:mt-0 relative z-10">
                   {char.ac}
                 </div>
               </div>
             </div>
 
             {/* Hit Points Box */}
-            <div className="flex-1 lg:flex-none lg:w-[240px] order-1 md:order-2 border border-red-800 bg-[#23242a] print:bg-white print:border-dnd-border rounded-lg p-2 md:p-3 lg:p-2 flex flex-col relative justify-center min-h-[4.5rem] lg:min-h-0 bg-gradient-to-br from-[#23242a] to-[#1a1b20] print:bg-none">
+            <div className="flex-1 lg:flex-none lg:w-[240px] order-1 md:order-2 border border-red-800 bg-[#23242a] print-stat-box rounded-lg p-2 md:p-3 lg:p-2 flex flex-col relative justify-center min-h-[4.5rem] lg:min-h-0 bg-gradient-to-br from-[#23242a] to-[#1a1b20]">
               <table className="w-full text-center mt-0 mb-1 lg:mb-2 lg:mt-1">
                 <thead>
-                  <tr className="text-[10px] text-gray-400 uppercase font-bold tracking-wider print:text-gray-500">
+                  <tr className="text-[10px] text-gray-400 uppercase font-bold tracking-wider print:text-gray-600">
                     <th className="font-normal text-emerald-500 print:text-emerald-700 text-left pl-2">
                       Current
                     </th>
                     <th className="font-normal text-gray-500 w-2"></th>
-                    <th className="font-normal text-gray-500">Max</th>
-                    <th className="font-normal text-gray-500">Temp</th>
+                    <th className="font-normal text-gray-500 print:text-gray-700">Max</th>
+                    <th className="font-normal text-gray-500 print:text-gray-700">Temp</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -337,21 +337,21 @@ export function CharacterSheet({ char }: Props) {
                     <td className="align-bottom text-left pl-2">
                       <input
                         type="number"
-                        className="w-16 lg:w-14 bg-transparent text-4xl lg:text-3xl font-bold focus:outline-none text-left text-white p-0 m-0 print:text-black font-sans"
+                        className="w-16 lg:w-14 bg-transparent text-4xl lg:text-3xl font-bold focus:outline-none text-left text-white print-stat-text p-0 m-0 font-sans"
                         value={currentHp}
                         onChange={(e) => setCurrentHp(Number(e.target.value))}
                       />
                     </td>
-                    <td className="text-2xl lg:text-xl text-gray-600 align-bottom pb-1 lg:pb-0.5 px-1">
+                    <td className="text-2xl lg:text-xl text-gray-600 print:text-black align-bottom pb-1 lg:pb-0.5 px-1">
                       /
                     </td>
-                    <td className="text-3xl lg:text-2xl font-bold text-gray-400 print:text-black align-bottom pb-1 lg:pb-0.5">
+                    <td className="text-3xl lg:text-2xl font-bold text-gray-400 print-stat-text align-bottom pb-1 lg:pb-0.5">
                       {char.hp.max}
                     </td>
                     <td className="align-bottom pb-1 lg:pb-0.5">
                       <input
                         type="number"
-                        className="w-12 lg:w-10 bg-transparent text-2xl lg:text-xl font-bold text-center text-blue-400 print:text-black focus:outline-none p-0 m-0"
+                        className="w-12 lg:w-10 bg-transparent text-2xl lg:text-xl font-bold text-center text-blue-400 print-stat-text focus:outline-none p-0 m-0"
                         value={tempHp || ""}
                         placeholder="--"
                         onChange={(e) => setTempHp(Number(e.target.value))}
@@ -360,7 +360,7 @@ export function CharacterSheet({ char }: Props) {
                   </tr>
                 </tbody>
               </table>
-              <div className="absolute -bottom-2 md:-bottom-2.5 right-4 bg-[#23242a] px-2 text-[10px] md:text-xs text-gray-400 uppercase font-bold border border-red-800 rounded print:bg-white print:text-dnd-ink print:border-dnd-border">
+              <div className="absolute -bottom-2 md:-bottom-2.5 right-4 bg-[#23242a] px-2 text-[10px] md:text-xs text-gray-400 uppercase font-bold border border-red-800 rounded print-stat-box">
                 Hit Points
               </div>
             </div>
@@ -687,7 +687,7 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Inventory"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-full-width ${mobileTab === "inventory" ? "flex" : "hidden md:hidden"} ${desktopTab === "inventory" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.currency && (
                     <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 sticky top-0 z-10 shadow-sm p-1.5 md:p-2 print:static print:bg-white print:border-b">
@@ -725,7 +725,7 @@ export function CharacterSheet({ char }: Props) {
                       </div>
                     </div>
                   )}
-                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative print-overflow-visible print-3-cols">
+                  <div className="p-2 flex flex-col gap-1 text-[11px] overflow-y-auto flex-1 h-0 w-full relative print-overflow-visible print-2-cols">
                     {char.inventory.length > 0 ? (
                       char.inventory.map((item, idx) => (
                         <div
@@ -765,7 +765,7 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Spells"
-                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-[60vh] lg:h-full flex-1 print-section-show print-break-inside-avoid print-full-width ${mobileTab === "spells" ? "flex" : "hidden md:hidden"} ${desktopTab === "spells" ? "lg:flex" : "lg:hidden"}`}
                 >
                   {char.spellcasting && (
                     <div className="flex justify-between items-center bg-gray-50 border-b border-gray-200 shrink-0 text-sm font-bold font-fantasy tabular-nums tracking-tighter shadow-sm z-10 sticky top-0 p-1.5 md:p-2 print:static print:bg-white print:border-b">
@@ -777,7 +777,7 @@ export function CharacterSheet({ char }: Props) {
                       </span>
                     </div>
                   )}
-                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1 print-overflow-visible print-3-cols">
+                  <div className="p-2 md:p-4 flex flex-col gap-4 text-[11px] overflow-y-auto w-full h-0 relative flex-1 print-overflow-visible print-2-cols">
                     {(() => {
                       const groupedSpells = Array.from(
                         { length: 10 },
@@ -963,9 +963,9 @@ export function CharacterSheet({ char }: Props) {
 
                 <Section
                   title="Features & Traits"
-                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print-section-show print-break-inside-avoid print-section-full ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
+                  className={`rounded border-gray-700 bg-white text-black h-auto lg:h-full flex-1 print-section-show print-break-inside-avoid print-full-width ${mobileTab === "features" ? "flex" : "hidden md:hidden"} ${desktopTab === "features" ? "lg:flex" : "lg:hidden"}`}
                 >
-                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print-overflow-visible print-3-cols">
+                  <div className="p-4 gap-6 space-y-6 text-sm w-full overflow-visible lg:overflow-y-auto h-full relative print-overflow-visible">
                     {localResources && localResources.length > 0 && (
                       <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-200 p-3 rounded-lg shadow-sm print:bg-white print:border-gray-300 print:break-inside-avoid">
                         {localResources.map((res, i) => (
