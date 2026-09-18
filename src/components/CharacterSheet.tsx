@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ParsedCharacter } from "../lib/foundryParser";
-import { Shield, X, Dice5, History } from "lucide-react";
+import { Shield, X, Dice5, History, RotateCcw } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 interface RollRecord {
@@ -69,8 +69,6 @@ export function CharacterSheet({ char }: Props) {
   const [showRollLog, setShowRollLog] = useState(false);
   const [lastRoll, setLastRoll] = useState<RollRecord | null>(null);
 
-  const [currentHp, setCurrentHp] = useState(char.hp.value);
-  const [tempHp, setTempHp] = useState(char.hp.temp);
   const [mobileTab, setMobileTab] = useState<
     "main" | "skills" | "actions" | "inventory" | "spells" | "features"
   >("main");
@@ -78,21 +76,106 @@ export function CharacterSheet({ char }: Props) {
     "actions" | "inventory" | "spells" | "features"
   >("actions");
 
-  // Local state for interactive elements
-  const [localResources, setLocalResources] = useState<typeof char.resources>(
-    char.resources || [],
-  );
+  const storageKey = `tome_character_state_${(char.name || "unknown").replace(/[^a-zA-Z0-9]/g, "_").toLowerCase()}`;
+
+  // Helper to load state from localStorage or fall back to character JSON defaults
+  const loadSavedState = () => {
+    try {
+      const savedRaw = localStorage.getItem(storageKey);
+      if (savedRaw) {
+        const parsed = JSON.parse(savedRaw);
+        
+        // Merge saved spell slots with character's slot schema
+        const baseSlots = char.spellcasting?.slots || {};
+        const mergedSlots: Record<string, { value: number; max: number; level?: number }> = {};
+        Object.keys(baseSlots).forEach((k) => {
+          const defaultSlot = baseSlots[k];
+          const savedValue = parsed.slots?.[k]?.value;
+          mergedSlots[k] = {
+            ...defaultSlot,
+            value: typeof savedValue === "number" ? Math.min(defaultSlot.max, Math.max(0, savedValue)) : defaultSlot.value,
+          };
+        });
+
+        // Merge saved resources
+        const baseRes = char.resources || [];
+        const mergedRes = baseRes.map((res, i) => {
+          const savedVal = parsed.resources?.[i]?.value;
+          return {
+            ...res,
+            value: typeof savedVal === "number" ? Math.min(res.max, Math.max(0, savedVal)) : res.value,
+          };
+        });
+
+        return {
+          currentHp: typeof parsed.currentHp === "number" ? Math.min(char.hp.max, parsed.currentHp) : char.hp.value,
+          tempHp: typeof parsed.tempHp === "number" ? parsed.tempHp : char.hp.temp,
+          resources: mergedRes,
+          slots: mergedSlots,
+        };
+      }
+    } catch (e) {
+      console.error("Failed to parse saved state from localStorage:", e);
+    }
+    return {
+      currentHp: char.hp.value,
+      tempHp: char.hp.temp,
+      resources: char.resources || [],
+      slots: char.spellcasting?.slots || {},
+    };
+  };
+
+  const initialState = loadSavedState();
+  const [currentHp, setCurrentHp] = useState<number>(initialState.currentHp);
+  const [tempHp, setTempHp] = useState<number>(initialState.tempHp);
+  const [localResources, setLocalResources] = useState<typeof char.resources>(initialState.resources);
   const [localSlots, setLocalSlots] = useState<
     Record<string, { value: number; max: number; level?: number }>
-  >(char.spellcasting?.slots || {});
+  >(initialState.slots);
 
-  // When char changes, sync state
-  React.useEffect(() => {
-    setCurrentHp(char.hp.value);
-    setTempHp(char.hp.temp);
-    setLocalResources(char.resources || []);
-    setLocalSlots(char.spellcasting?.slots || {});
+  // When char prop changes, re-sync state from localStorage or char
+  useEffect(() => {
+    const state = loadSavedState();
+    setCurrentHp(state.currentHp);
+    setTempHp(state.tempHp);
+    setLocalResources(state.resources);
+    setLocalSlots(state.slots);
   }, [char]);
+
+  // Automatically persist changes to localStorage
+  useEffect(() => {
+    try {
+      const stateToSave = {
+        currentHp,
+        tempHp,
+        resources: localResources,
+        slots: localSlots,
+      };
+      localStorage.setItem(storageKey, JSON.stringify(stateToSave));
+    } catch (e) {
+      console.error("Failed to save state to localStorage:", e);
+    }
+  }, [currentHp, tempHp, localResources, localSlots, storageKey]);
+
+  // Long Rest handler
+  const handleLongRest = () => {
+    const resetHp = char.hp.max;
+    const resetTempHp = 0;
+    
+    // Restore all slots to max
+    const restoredSlots: Record<string, { value: number; max: number; level?: number }> = {};
+    Object.keys(localSlots).forEach((k) => {
+      restoredSlots[k] = { ...localSlots[k], value: localSlots[k].max };
+    });
+
+    // Restore all resources to max
+    const restoredRes = localResources.map((r) => ({ ...r, value: r.max }));
+
+    setCurrentHp(resetHp);
+    setTempHp(resetTempHp);
+    setLocalSlots(restoredSlots);
+    setLocalResources(restoredRes);
+  };
 
   const updateResourceValue = (index: number, delta: number) => {
     setLocalResources((prev) => {
@@ -207,13 +290,23 @@ export function CharacterSheet({ char }: Props) {
               <span>{char.alignment}</span>
             </div>
           </div>
-          <button
-            onClick={() => setShowRollLog(true)}
-            className="flex items-center gap-2 bg-[#23242a] text-gray-400 hover:text-white hover:bg-gray-800 px-3 py-1.5 rounded border border-gray-700 text-xs font-bold uppercase transition print:hidden shadow-lg"
-          >
-            <History className="w-4 h-4" />
-            Rolls
-          </button>
+          <div className="flex items-center gap-2 print:hidden">
+            <button
+              onClick={handleLongRest}
+              className="flex items-center gap-1.5 bg-[#23242a] text-gray-400 hover:text-emerald-400 hover:bg-gray-800 px-3 py-1.5 rounded border border-gray-700 text-xs font-bold uppercase transition shadow-lg cursor-pointer"
+              title="Restore HP, temp HP, spell slots, and resources to max (Long Rest)"
+            >
+              <RotateCcw className="w-4 h-4" />
+              Long Rest
+            </button>
+            <button
+              onClick={() => setShowRollLog(true)}
+              className="flex items-center gap-1.5 bg-[#23242a] text-gray-400 hover:text-white hover:bg-gray-800 px-3 py-1.5 rounded border border-gray-700 text-xs font-bold uppercase transition shadow-lg cursor-pointer"
+            >
+              <History className="w-4 h-4" />
+              Rolls
+            </button>
+          </div>
         </div>
       </div>
 
