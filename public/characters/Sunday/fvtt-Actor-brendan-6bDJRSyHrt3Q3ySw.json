@@ -6,10 +6,10 @@
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 43,
-      "ep": 0,
-      "sp": 34,
-      "cp": 76
+      "gp": 102,
+      "ep": 15,
+      "sp": 68,
+      "cp": 153
     },
     "abilities": {
       "str": {
@@ -521,9 +521,9 @@
       "loyalty": {},
       "hp": {
         "max": null,
-        "temp": 0,
+        "temp": 7,
         "tempmax": 0,
-        "value": 19,
+        "value": 10,
         "bonuses": {}
       },
       "death": {
@@ -538,7 +538,7 @@
           "save": ""
         }
       },
-      "inspiration": true
+      "inspiration": false
     },
     "bastion": {
       "name": "",
@@ -1500,7 +1500,7 @@
           "denomination": "gp"
         },
         "attunement": "",
-        "equipped": false,
+        "equipped": true,
         "rarity": "",
         "identified": true,
         "cover": null,
@@ -1769,7 +1769,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017511,
-        "modifiedTime": 1788707017511,
+        "modifiedTime": 1791119276372,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "exportSource": null,
         "compendiumSource": "Compendium.dnd5e.items.Item.0E565kQUBmndJ1a2"
@@ -3408,7 +3408,7 @@
         "wealth": "",
         "hd": {
           "denomination": "d10",
-          "spent": 0,
+          "spent": 2,
           "additional": ""
         },
         "startingEquipment": [],
@@ -3428,8 +3428,8 @@
         "systemVersion": "5.3.3",
         "coreVersion": "14.367",
         "createdTime": 1788707017512,
-        "modifiedTime": 1788707017512,
-        "lastModifiedBy": "iDWMt45X10sVnKCD",
+        "modifiedTime": 1791725014507,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classes.Item.ABEBgWyRhVlDUIfq",
         "duplicateSource": null,
         "exportSource": {
@@ -3526,7 +3526,14 @@
           "migratedUses": 1,
           "sourceId": "Compendium.laaru-dnd5-hw.classfeatures.nTjmWbyHweXuIqwc",
           "advancementOrigin": "DMcIxV1vElUXOR88.mlcvcu7p2jfwxwa3",
-          "advancementRoot": "DMcIxV1vElUXOR88.mlcvcu7p2jfwxwa3"
+          "advancementRoot": "DMcIxV1vElUXOR88.mlcvcu7p2jfwxwa3",
+          "last": {
+            "gAtW7gVYDIJF6NBy": {
+              "damageType": {
+                "0": "healing"
+              }
+            }
+          }
         }
       },
       "system": {
@@ -3551,7 +3558,7 @@
               "type": "recoverAll"
             }
           ],
-          "spent": 0
+          "spent": 1
         },
         "requirements": "Fighter 1",
         "cover": null,
@@ -3732,7 +3739,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017513,
-        "modifiedTime": 1788707017513,
+        "modifiedTime": 1791726286925,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classfeatures.Item.nTjmWbyHweXuIqwc",
         "duplicateSource": null,
@@ -4112,7 +4119,7 @@
             "otherActivityId": "",
             "otherActivityAsParentType": true,
             "attackMode": "oneHanded",
-            "ammunition": "",
+            "ammunition": "UknjDa4K6d4hhwC3",
             "otherActivityUuid": "",
             "attackRollPerTarget": "default",
             "fumbleThreshold": 1
@@ -4141,7 +4148,16 @@
           "persistSourceMigration": true,
           "sourceId": "Compendium.laaru-dnd5-hw.items.Item.3cymOVja8jXbzrdT",
           "advancementOrigin": "DMcIxV1vElUXOR88.SidOjx7leyAU6nz4",
-          "advancementRoot": "DMcIxV1vElUXOR88.SidOjx7leyAU6nz4"
+          "advancementRoot": "DMcIxV1vElUXOR88.SidOjx7leyAU6nz4",
+          "last": {
+            "dnd5eactivity000": {
+              "ammunition": "UknjDa4K6d4hhwC3",
+              "attackMode": "twoHanded",
+              "damageType": {
+                "0": "piercing"
+              }
+            }
+          }
         },
         "midi-qol": {
           "fumbleThreshold": null,
@@ -4172,7 +4188,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017514,
-        "modifiedTime": 1788707017514,
+        "modifiedTime": 1791722648427,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "exportSource": null
       },
@@ -4287,7 +4303,7 @@
           "book": "PHB",
           "rules": "2014"
         },
-        "quantity": 20,
+        "quantity": 8,
         "weight": {
           "value": 0.05,
           "units": "lb"
@@ -4534,7 +4550,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017515,
-        "modifiedTime": 1788707017515,
+        "modifiedTime": 1791722059012,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "exportSource": null
       },
@@ -4573,7 +4589,7 @@
           "denomination": "gp"
         },
         "attunement": "",
-        "equipped": false,
+        "equipped": true,
         "rarity": "",
         "identified": true,
         "cover": null,
@@ -4873,7 +4889,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017515,
-        "modifiedTime": 1789303221509,
+        "modifiedTime": 1791119276372,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "exportSource": null
       },
@@ -5320,7 +5336,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017516,
-        "modifiedTime": 1788707017516,
+        "modifiedTime": 1791722648428,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "exportSource": null
       },
@@ -6839,280 +6855,6 @@
       }
     },
     {
-      "name": "Potion of Healing",
-      "type": "consumable",
-      "system": {
-        "description": {
-          "value": "<div class=\"rd__b  rd__b--2\"><p>You regain [[/r 2d4 + 2]] hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p></div>",
-          "chat": ""
-        },
-        "source": {
-          "custom": "",
-          "book": "DMG'14",
-          "page": "187",
-          "license": "",
-          "rules": "2014",
-          "revision": 1
-        },
-        "quantity": 1,
-        "weight": {
-          "value": 0.5,
-          "units": "lb"
-        },
-        "price": {
-          "value": 50,
-          "denomination": "gp"
-        },
-        "attunement": "NaN",
-        "rarity": "common",
-        "identified": true,
-        "uses": {
-          "max": "1",
-          "recovery": [],
-          "autoDestroy": true,
-          "spent": 0
-        },
-        "damage": {
-          "base": {
-            "number": 2,
-            "denomination": 4,
-            "bonus": "2",
-            "types": [
-              "healing"
-            ],
-            "custom": {
-              "enabled": false,
-              "formula": ""
-            },
-            "scaling": {
-              "mode": "",
-              "number": null,
-              "formula": ""
-            }
-          },
-          "replace": false
-        },
-        "type": {
-          "value": "potion",
-          "subtype": ""
-        },
-        "unidentified": {
-          "description": ""
-        },
-        "container": null,
-        "properties": [
-          "mgc"
-        ],
-        "activities": {
-          "dnd5eactivity000": {
-            "_id": "dnd5eactivity000",
-            "type": "heal",
-            "activation": {
-              "type": "action",
-              "value": 1,
-              "condition": "",
-              "override": false
-            },
-            "consumption": {
-              "targets": [
-                {
-                  "type": "itemUses",
-                  "target": "",
-                  "value": "1",
-                  "scaling": {
-                    "mode": "",
-                    "formula": ""
-                  }
-                }
-              ],
-              "scaling": {
-                "allowed": false,
-                "max": ""
-              },
-              "spellSlot": true
-            },
-            "description": {
-              "chatFlavor": ""
-            },
-            "duration": {
-              "concentration": false,
-              "value": "",
-              "units": "inst",
-              "special": "",
-              "override": false
-            },
-            "effects": [],
-            "range": {
-              "units": "touch",
-              "special": "",
-              "override": false
-            },
-            "target": {
-              "template": {
-                "count": "",
-                "contiguous": false,
-                "type": "",
-                "size": "",
-                "width": "",
-                "height": "",
-                "units": "ft",
-                "stationary": false
-              },
-              "affects": {
-                "count": "1",
-                "type": "creature",
-                "choice": false,
-                "special": ""
-              },
-              "prompt": true,
-              "override": false
-            },
-            "healing": {
-              "number": 2,
-              "denomination": 4,
-              "bonus": "2",
-              "types": [
-                "healing"
-              ],
-              "custom": {
-                "enabled": false,
-                "formula": ""
-              },
-              "scaling": {
-                "mode": "whole",
-                "number": null,
-                "formula": ""
-              }
-            },
-            "uses": {
-              "spent": 0,
-              "recovery": []
-            },
-            "sort": 0,
-            "useConditionText": "",
-            "useConditionReason": "",
-            "effectConditionText": "",
-            "macroData": {
-              "name": "",
-              "command": ""
-            },
-            "ignoreTraits": {
-              "idi": false,
-              "idr": false,
-              "idv": false,
-              "ida": false,
-              "idm": false
-            },
-            "midiProperties": {
-              "ignoreTraits": [],
-              "triggeredActivityId": "none",
-              "triggeredActivityConditionText": "",
-              "triggeredActivityTargets": "targets",
-              "triggeredActivityRollAs": "self",
-              "autoConsume": false,
-              "forceConsumeDialog": "default",
-              "forceRollDialog": "default",
-              "forceDamageDialog": "default",
-              "confirmTargets": "default",
-              "autoTargetType": "any",
-              "autoTargetAction": "default",
-              "automationOnly": false,
-              "otherActivityCompatible": true,
-              "otherActivityAsParentType": true,
-              "identifier": "",
-              "displayActivityName": false,
-              "rollMode": "default",
-              "chooseEffects": false,
-              "toggleEffect": false,
-              "ignoreFullCover": false,
-              "removeChatButtons": "default",
-              "magicEffect": false,
-              "magicDamage": false,
-              "noConcentrationCheck": false,
-              "autoCEEffects": "default",
-              "triggeredActivityConsume": true,
-              "triggeredActivityConfigure": true,
-              "skipConcentrationCheck": false
-            },
-            "isOverTimeFlag": false,
-            "overTimeProperties": {
-              "saveRemoves": true,
-              "preRemoveConditionText": "",
-              "postRemoveConditionText": "",
-              "rollAs": "target"
-            },
-            "img": null,
-            "flags": {},
-            "visibility": {
-              "level": {},
-              "requireAttunement": false,
-              "requireIdentification": false,
-              "requireMagic": false
-            },
-            "regionBehavior": {
-              "enabled": false,
-              "dispositionFilter": -1,
-              "excludeSource": true,
-              "oncePerTurn": true,
-              "wallRestriction": "none",
-              "regionVisibility": 2,
-              "attachToken": "default",
-              "rules": []
-            },
-            "regionLight": {
-              "enabled": false,
-              "dim": 0,
-              "bright": 0,
-              "color": null,
-              "alpha": 0.5,
-              "luminosity": 0.5,
-              "animationType": "",
-              "animationSpeed": 5,
-              "animationIntensity": 5
-            },
-            "otherActivityId": null
-          }
-        },
-        "attuned": false,
-        "identifier": "potion-of-healing",
-        "equipped": false
-      },
-      "img": "icons/consumables/potions/potion-tube-corked-red.webp",
-      "ownership": {
-        "default": 0,
-        "lBfZhvkwevNqguiH": 3,
-        "psL8euqpXqwLKuNe": 3
-      },
-      "flags": {
-        "plutonium": {
-          "page": "items.html",
-          "source": "DMG",
-          "hash": "potion%20of%20healing_dmg",
-          "propDroppable": "item",
-          "isStandardDragDrop": true
-        },
-        "item-piles": {
-          "item": {}
-        },
-        "dnd5e": {}
-      },
-      "effects": [],
-      "folder": "G6bBhgyFkmkB21h4",
-      "_stats": {
-        "coreVersion": "14.367",
-        "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
-        "createdTime": 1788707017518,
-        "modifiedTime": 1788707017518,
-        "lastModifiedBy": "iDWMt45X10sVnKCD",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "aRD0gklvLsGg3JCe",
-      "sort": 12500
-    },
-    {
       "_id": "amPP94U8gfc3Hll8",
       "name": "Порыв к действию",
       "type": "feat",
@@ -7128,7 +6870,6 @@
           },
           "migratedUses": 1,
           "sourceId": "Compendium.laaru-dnd5-hw.classfeatures.xF1VTcJ3AdkbTsdQ",
-          "advancementOrigin": "DMcIxV1vElUXOR88.0u1lokzkujbw3yp0",
           "advancementRoot": "DMcIxV1vElUXOR88.0u1lokzkujbw3yp0"
         }
       },
@@ -7324,7 +7065,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707017264,
-        "modifiedTime": 1789307645044,
+        "modifiedTime": 1791119757493,
         "lastModifiedBy": "iDWMt45X10sVnKCD",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classfeatures.Item.xF1VTcJ3AdkbTsdQ",
         "duplicateSource": null,
@@ -7335,9 +7076,1332 @@
         "default": 0,
         "iDWMt45X10sVnKCD": 3
       }
+    },
+    {
+      "_id": "x1zdggSmZ4tyb5NN",
+      "name": "Breastplate",
+      "type": "equipment",
+      "system": {
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--2\"><p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p></div>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "PHB'14",
+          "page": "145",
+          "license": "",
+          "rules": "2014",
+          "revision": 1
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 20,
+          "units": "lb"
+        },
+        "price": {
+          "value": 400,
+          "denomination": "gp"
+        },
+        "attunement": "NaN",
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "armor": {
+          "value": 14,
+          "dex": 2
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": "",
+          "units": "ft"
+        },
+        "strength": null,
+        "type": {
+          "value": "medium",
+          "baseItem": "breastplate"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": [],
+        "activities": {},
+        "attuned": false,
+        "identifier": "breastplate",
+        "crew": {
+          "value": []
+        },
+        "equipped": false,
+        "proficient": null
+      },
+      "img": "icons/equipment/chest/breastplate-banded-steel-grey.webp",
+      "flags": {
+        "plutonium": {
+          "page": "items.html",
+          "source": "PHB",
+          "hash": "breastplate_phb"
+        },
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "effects": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790513560002,
+        "modifiedTime": 1790513560003,
+        "lastModifiedBy": "psL8euqpXqwLKuNe"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      }
+    },
+    {
+      "_id": "C0rk0JmIPenhk7hh",
+      "name": "Javelin",
+      "type": "weapon",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "PHB'14",
+          "page": "149",
+          "license": "",
+          "rules": "2014",
+          "revision": 1
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Ranged Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, range 30/120 ft., one target. <i>Hit:</i> 7 ([[/damage 1d6 + 4 type=piercing]]) damage.</p></div>",
+          "chat": ""
+        },
+        "range": {
+          "value": 30,
+          "long": 120,
+          "units": "ft"
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "type": {
+          "value": "simpleM",
+          "baseItem": "javelin"
+        },
+        "properties": [
+          "thr"
+        ],
+        "damage": {
+          "base": {
+            "types": [
+              "piercing"
+            ],
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "scaling": {
+              "mode": "",
+              "number": 1
+            },
+            "custom": {
+              "enabled": false
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        },
+        "activities": {
+          "vP5e9bhIxKrjcYfN": {
+            "_id": "vP5e9bhIxKrjcYfN",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "override": false
+            },
+            "target": {
+              "prompt": true,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false
+            },
+            "attack": {
+              "flat": false,
+              "type": {
+                "value": "ranged",
+                "classification": ""
+              },
+              "ability": "str",
+              "bonus": "",
+              "critical": {}
+            },
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "self",
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            },
+            "damage": {
+              "critical": {},
+              "includeBase": true,
+              "parts": []
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "skipConcentrationCheck": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "otherActivityId": "",
+            "otherActivityAsParentType": true,
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": "",
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1,
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            }
+          }
+        },
+        "rarity": "",
+        "identified": true,
+        "attunement": "NaN",
+        "price": {
+          "value": 5,
+          "denomination": "sp"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 2,
+          "units": "lb"
+        },
+        "ammunition": {},
+        "mastery": "",
+        "armor": {
+          "value": null
+        },
+        "identifier": "javelin",
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "attuned": false,
+        "crew": {
+          "value": []
+        },
+        "equipped": false,
+        "proficient": null
+      },
+      "img": "icons/weapons/polearms/javelin-flared.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterAction",
+          "source": "FleeMortals",
+          "hash": "javelin_human%20knave_fleemortals_fleemortals"
+        },
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "effects": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790513574406,
+        "modifiedTime": 1790513574407,
+        "lastModifiedBy": "psL8euqpXqwLKuNe"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      }
+    },
+    {
+      "_id": "KeT5Y2bVgvKs67BM",
+      "name": "Shield",
+      "type": "equipment",
+      "system": {
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--2\"><p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p></div>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "PHB'14",
+          "page": "144",
+          "license": "",
+          "rules": "2014",
+          "revision": 1
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 6,
+          "units": "lb"
+        },
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "attunement": "NaN",
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "armor": {
+          "value": 2,
+          "dex": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": "",
+          "units": "ft"
+        },
+        "strength": null,
+        "type": {
+          "value": "shield",
+          "baseItem": "shield"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": [],
+        "activities": {},
+        "attuned": false,
+        "identifier": "shield",
+        "crew": {
+          "value": []
+        },
+        "equipped": true,
+        "proficient": null
+      },
+      "img": "icons/equipment/shield/oval-wooden-boss-steel.webp",
+      "flags": {
+        "plutonium": {
+          "page": "items.html",
+          "source": "PHB",
+          "hash": "shield_phb"
+        },
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "effects": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790513575144,
+        "modifiedTime": 1791722648429,
+        "lastModifiedBy": "iDWMt45X10sVnKCD"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      }
+    },
+    {
+      "_id": "2t6Pmr9bg2EYreSx",
+      "name": "Morningstar",
+      "type": "weapon",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "PHB'14",
+          "page": "149",
+          "license": "",
+          "rules": "2014",
+          "revision": 1
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p><i>Melee Weapon Attack:</i> [[/r 1d20+6]]{+6} to hit, reach 5 ft., one target. <i>Hit:</i> 8 ([[/damage 1d8 + 4 type=piercing]]) damage, or 13 ([[/damage 2d8 + 4 type=piercing]]) damage if the target is &amp;Reference[condition=prone].</p></div>",
+          "chat": ""
+        },
+        "range": {
+          "value": 0,
+          "long": 0,
+          "units": "ft"
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "type": {
+          "value": "martialM",
+          "baseItem": "morningstar"
+        },
+        "properties": [],
+        "activities": {
+          "Ac5BLBuNuSbwrnzt": {
+            "_id": "Ac5BLBuNuSbwrnzt",
+            "type": "attack",
+            "name": "Attack: 1d8 Piercing Damage",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "override": false
+            },
+            "target": {
+              "prompt": true,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false
+            },
+            "attack": {
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": ""
+              },
+              "ability": "str",
+              "bonus": "",
+              "critical": {}
+            },
+            "damage": {
+              "parts": [
+                {
+                  "types": [
+                    "piercing"
+                  ],
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "@mod",
+                  "scaling": {
+                    "mode": "",
+                    "number": 1
+                  },
+                  "custom": {
+                    "enabled": false
+                  }
+                }
+              ],
+              "critical": {},
+              "includeBase": true
+            },
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "self",
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "skipConcentrationCheck": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "otherActivityId": "",
+            "otherActivityAsParentType": true,
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": "",
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1,
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            }
+          },
+          "Oah4FgPG3ki7KPby": {
+            "_id": "Oah4FgPG3ki7KPby",
+            "type": "attack",
+            "name": "Attack: 2d8 Piercing Damage",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "override": false
+            },
+            "target": {
+              "prompt": true,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false
+            },
+            "attack": {
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": ""
+              },
+              "ability": "str",
+              "bonus": "",
+              "critical": {}
+            },
+            "damage": {
+              "parts": [
+                {
+                  "types": [
+                    "piercing"
+                  ],
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "@mod",
+                  "scaling": {
+                    "mode": "",
+                    "number": 1
+                  },
+                  "custom": {
+                    "enabled": false
+                  }
+                }
+              ],
+              "critical": {},
+              "includeBase": true
+            },
+            "sort": 0,
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "self",
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "skipConcentrationCheck": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": "",
+              "rollAs": "target"
+            },
+            "otherActivityId": "",
+            "otherActivityAsParentType": true,
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": "",
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1,
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            }
+          }
+        },
+        "rarity": "",
+        "identified": true,
+        "attunement": "NaN",
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 4,
+          "units": "lb"
+        },
+        "ammunition": {},
+        "mastery": "",
+        "armor": {
+          "value": null
+        },
+        "identifier": "morningstar",
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "attuned": false,
+        "damage": {
+          "base": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        },
+        "crew": {
+          "value": []
+        },
+        "equipped": false,
+        "proficient": null
+      },
+      "img": "icons/weapons/maces/mace-round-spiked-black.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterAction",
+          "source": "FleeMortals",
+          "hash": "morningstar_human%20knave_fleemortals_fleemortals"
+        },
+        "dnd5e": {
+          "last": {
+            "Ac5BLBuNuSbwrnzt": {
+              "attackMode": "oneHanded",
+              "damageType": {
+                "0": "piercing"
+              }
+            }
+          }
+        },
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "effects": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790513575731,
+        "modifiedTime": 1790513575731,
+        "lastModifiedBy": "psL8euqpXqwLKuNe"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      }
+    },
+    {
+      "name": "Свиток заклинания: Исцеление ран",
+      "type": "consumable",
+      "img": "icons/sundries/scrolls/scroll-bound-black-tan.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>1-й круг &amp;Reference[Spell Scroll]</em></p><p>Существо, которого вы коснулись, восстанавливает ПЗ в количестве, равном [[/r 2d8]] + модификатор вашей заклинательной характеристики.</p><p><strong>Использование ячейки кругом выше.</strong> Исцеление увеличивается на [[/r 2d8]] за каждый круг ячейки выше 1-го.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "",
+          "license": "CC-BY-4.0",
+          "rules": "2024",
+          "revision": 1
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 50,
+          "denomination": "gp"
+        },
+        "attunement": "NaN",
+        "rarity": "common",
+        "identified": true,
+        "uses": {
+          "max": "1",
+          "recovery": [],
+          "autoDestroy": true,
+          "spent": 0
+        },
+        "damage": {
+          "base": {
+            "number": null,
+            "denomination": null,
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "replace": false
+        },
+        "type": {
+          "value": "scroll",
+          "subtype": ""
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": [
+          "mgc",
+          "vocal",
+          "somatic",
+          "vocal",
+          "somatic"
+        ],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "heal",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "target": "",
+                  "value": "1",
+                  "scaling": {}
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "units": "inst",
+              "override": true,
+              "value": "",
+              "concentration": false
+            },
+            "effects": [],
+            "range": {
+              "override": true,
+              "units": "touch",
+              "special": ""
+            },
+            "target": {
+              "prompt": true,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false,
+                "type": ""
+              },
+              "affects": {
+                "choice": false,
+                "count": "1",
+                "type": "creature",
+                "special": ""
+              },
+              "override": true
+            },
+            "healing": {
+              "number": 2,
+              "denomination": 8,
+              "bonus": "@mod",
+              "types": [
+                "healing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 2,
+                "formula": ""
+              }
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            },
+            "sort": 0,
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "otherActivityId": null,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            }
+          }
+        },
+        "attuned": false,
+        "identifier": "spell-scroll-1st-level",
+        "equipped": false
+      },
+      "effects": [],
+      "folder": "epDf8I2SD3cS6ctz",
+      "flags": {
+        "babele": {
+          "translated": true,
+          "hasTranslation": true,
+          "originalName": "Cure Wounds",
+          "originalPayload": {
+            "name": "Cure Wounds",
+            "description": "<p>A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d8 for each spell slot level above 1.</p>"
+          },
+          "lang": "ru"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "scaling": 0,
+          "spellLevel": {
+            "value": 1,
+            "base": 1
+          }
+        },
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791118978923,
+        "modifiedTime": 1791118978923,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "exportSource": null,
+        "compendiumSource": "Compendium.dnd5e.items.Item.9GSfMg0VOA2b4uFN"
+      },
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      },
+      "_id": "jvtR3mL6nRW1BEtP",
+      "sort": 0
     }
   ],
-  "effects": [],
+  "effects": [
+    {
+      "name": "На страже!",
+      "img": "icons/magic/perception/eye-slit-orange.webp",
+      "origin": "Actor.6bDJRSyHrt3Q3ySw",
+      "disabled": false,
+      "description": "Ваша группа не может быть застигнута врасплох враждебными существами, которых вы можете видеть. Если вы бросаете инициативу, до своего первого хода вы можете использовать реакцию, чтобы выполнить одно из действий: Атака, Рывок, Уклонение, Скрыться или заговор.",
+      "statuses": [
+        "watch"
+      ],
+      "flags": {
+        "world": {
+          "exploration-activity": true,
+          "description": "Ваша группа не может быть застигнута врасплох враждебными существами, которых вы можете видеть. Если вы бросаете инициативу, до своего первого хода вы можете использовать реакцию, чтобы выполнить одно из действий: Атака, Рывок, Уклонение, Скрыться или заговор.",
+          "shortDesc": "Вы стоите на страже, готовясь к любой неожиданности.",
+          "requirements": "вы не ослеплены и не оглохли и можете ясно видеть окружающую обстановку."
+        },
+        "core": {
+          "statusId": "watch"
+        },
+        "dae": {
+          "specialDuration": []
+        }
+      },
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": true
+      },
+      "system": {
+        "changes": []
+      },
+      "_id": "UMwHlAJuc2aS0Zyn",
+      "type": "base",
+      "start": {
+        "time": 21910920,
+        "combat": null,
+        "combatant": null,
+        "initiative": null,
+        "round": null,
+        "turn": null
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791717032745,
+        "modifiedTime": 1791722186702,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "dnd5ereaction000",
+      "name": "Reaction used",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.actions.reaction",
+            "type": "override",
+            "value": true,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.actions.reactionsUsed",
+            "type": "override",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.actions.reactionCombatRound",
+            "type": "override",
+            "value": 3,
+            "phase": "initial"
+          }
+        ]
+      },
+      "img": "modules/midi-qol/icons/reaction.svg",
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "shortRest"
+          ]
+        }
+      },
+      "statuses": [
+        "reaction"
+      ],
+      "showIcon": 2,
+      "type": "base",
+      "disabled": false,
+      "start": {
+        "time": 21915156,
+        "combat": "ej8KmmBIUoIjlWOm",
+        "combatant": "VvjYOSklqxdKXe9V",
+        "initiative": 10,
+        "round": 3,
+        "turn": 7
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "targetStart",
+        "expired": true
+      },
+      "description": "",
+      "origin": "Actor.6bDJRSyHrt3Q3ySw",
+      "tint": "#ffffff",
+      "transfer": false,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791727590768,
+        "modifiedTime": 1791728066132,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "ownership": {
     "default": 1
   },
@@ -7386,8 +8450,7 @@
                           "name": "Dice Set",
                           "img": "icons/sundries/gaming/dice-runed-brown.webp",
                           "type": "Item",
-                          "quantity": 1,
-                          "depleted": false
+                          "quantity": 1
                         },
                         "1-0": {
                           "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.CLuvNtVoLtqiceCf",
@@ -7412,8 +8475,7 @@
                           "uses": {
                             "value": 1,
                             "max": 1
-                          },
-                          "depleted": false
+                          }
                         },
                         "4-0": {
                           "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.amPP94U8gfc3Hll8",
@@ -7423,8 +8485,31 @@
                           "uses": {
                             "value": 1,
                             "max": 1
-                          },
-                          "depleted": false
+                          }
+                        },
+                        "4-1": {
+                          "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.sYT7wCOG06RxwlGc",
+                          "name": "Второе дыхание",
+                          "img": "icons/magic/life/heart-glowing-red.webp",
+                          "type": "Item",
+                          "uses": {
+                            "value": 1,
+                            "max": 1
+                          }
+                        },
+                        "0-1": {
+                          "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.C0rk0JmIPenhk7hh",
+                          "name": "Javelin",
+                          "img": "icons/weapons/polearms/javelin-flared.webp",
+                          "type": "Item",
+                          "quantity": 1
+                        },
+                        "1-1": {
+                          "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.2t6Pmr9bg2EYreSx",
+                          "name": "Morningstar",
+                          "img": "icons/weapons/maces/mace-round-spiked-black.webp",
+                          "type": "Item",
+                          "quantity": 1
                         }
                       }
                     },
@@ -7443,10 +8528,16 @@
                           "img": "tokenizer/npc-images/party.Token.webp?1762563816638",
                           "type": "Macro"
                         },
+                        "4-0": {
+                          "uuid": "Macro.HZVKCnl96Opmib0R",
+                          "name": "Факел",
+                          "img": "icons/sundries/lights/torch-brown-lit.webp",
+                          "type": "Macro"
+                        },
                         "0-0": {
-                          "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.aRD0gklvLsGg3JCe",
-                          "name": "Potion of Healing",
-                          "img": "icons/consumables/potions/potion-tube-corked-red.webp",
+                          "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.jvtR3mL6nRW1BEtP",
+                          "name": "Свиток заклинания: Исцеление ран",
+                          "img": "icons/sundries/scrolls/scroll-bound-black-tan.webp",
                           "type": "Item",
                           "quantity": 1,
                           "uses": {
@@ -7454,10 +8545,10 @@
                             "max": 1
                           }
                         },
-                        "4-0": {
-                          "uuid": "Macro.HZVKCnl96Opmib0R",
-                          "name": "Факел",
-                          "img": "icons/sundries/lights/torch-brown-lit.webp",
+                        "2-1": {
+                          "uuid": "Macro.OX2pucsFSOy1YIa3",
+                          "name": "Ходы Подземелья",
+                          "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
                           "type": "Macro"
                         }
                       }
@@ -7481,8 +8572,7 @@
                   "name": "Dice Set",
                   "img": "icons/sundries/gaming/dice-runed-brown.webp",
                   "type": "Item",
-                  "quantity": 1,
-                  "depleted": false
+                  "quantity": 1
                 },
                 "1-0": {
                   "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.CLuvNtVoLtqiceCf",
@@ -7507,8 +8597,7 @@
                   "uses": {
                     "value": 1,
                     "max": 1
-                  },
-                  "depleted": false
+                  }
                 },
                 "4-0": {
                   "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.amPP94U8gfc3Hll8",
@@ -7518,8 +8607,31 @@
                   "uses": {
                     "value": 1,
                     "max": 1
-                  },
-                  "depleted": false
+                  }
+                },
+                "4-1": {
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.sYT7wCOG06RxwlGc",
+                  "name": "Второе дыхание",
+                  "img": "icons/magic/life/heart-glowing-red.webp",
+                  "type": "Item",
+                  "uses": {
+                    "value": 1,
+                    "max": 1
+                  }
+                },
+                "0-1": {
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.C0rk0JmIPenhk7hh",
+                  "name": "Javelin",
+                  "img": "icons/weapons/polearms/javelin-flared.webp",
+                  "type": "Item",
+                  "quantity": 1
+                },
+                "1-1": {
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.2t6Pmr9bg2EYreSx",
+                  "name": "Morningstar",
+                  "img": "icons/weapons/maces/mace-round-spiked-black.webp",
+                  "type": "Item",
+                  "quantity": 1
                 }
               }
             },
@@ -7538,10 +8650,16 @@
                   "img": "tokenizer/npc-images/party.Token.webp?1762563816638",
                   "type": "Macro"
                 },
+                "4-0": {
+                  "uuid": "Macro.HZVKCnl96Opmib0R",
+                  "name": "Факел",
+                  "img": "icons/sundries/lights/torch-brown-lit.webp",
+                  "type": "Macro"
+                },
                 "0-0": {
-                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.aRD0gklvLsGg3JCe",
-                  "name": "Potion of Healing",
-                  "img": "icons/consumables/potions/potion-tube-corked-red.webp",
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.jvtR3mL6nRW1BEtP",
+                  "name": "Свиток заклинания: Исцеление ран",
+                  "img": "icons/sundries/scrolls/scroll-bound-black-tan.webp",
                   "type": "Item",
                   "quantity": 1,
                   "uses": {
@@ -7549,10 +8667,10 @@
                     "max": 1
                   }
                 },
-                "4-0": {
-                  "uuid": "Macro.HZVKCnl96Opmib0R",
-                  "name": "Факел",
-                  "img": "icons/sundries/lights/torch-brown-lit.webp",
+                "2-1": {
+                  "uuid": "Macro.OX2pucsFSOy1YIa3",
+                  "name": "Ходы Подземелья",
+                  "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
                   "type": "Macro"
                 }
               }
@@ -7592,23 +8710,23 @@
               "cols": 2,
               "items": {
                 "0-0": {
-                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.CLuvNtVoLtqiceCf",
-                  "name": "Топорик / Handaxe",
-                  "img": "icons/weapons/axes/axe-broad-black.webp",
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.Mq7Ed0WN06xKIhHl",
+                  "name": "Длинный меч / Longsword",
+                  "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
                   "type": "Item",
                   "quantity": 1
                 },
                 "1-0": {
-                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.KY4HNbO9VwHSSeI8",
-                  "name": "Трофейный Кинжал",
-                  "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+                  "uuid": "Actor.6bDJRSyHrt3Q3ySw.Item.KeT5Y2bVgvKs67BM",
+                  "name": "Shield",
+                  "img": "icons/equipment/shield/oval-wooden-boss-steel.webp",
                   "type": "Item",
                   "quantity": 1
                 }
               }
             }
           ],
-          "activeSet": 0
+          "activeSet": 2
         },
         "quickAccess": {
           "grids": [
@@ -7632,7 +8750,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
     "createdTime": 1788275482963,
-    "modifiedTime": 1789420371498,
+    "modifiedTime": 1791728138347,
     "lastModifiedBy": "psL8euqpXqwLKuNe",
     "compendiumSource": null,
     "duplicateSource": null,

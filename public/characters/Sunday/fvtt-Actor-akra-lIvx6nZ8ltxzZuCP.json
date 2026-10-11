@@ -150,9 +150,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 15,
+        "value": 8,
         "max": null,
-        "temp": 0,
+        "temp": 7,
         "tempmax": 0,
         "bonuses": {
           "level": "",
@@ -300,10 +300,10 @@
     },
     "currency": {
       "pp": 0,
-      "gp": 26,
-      "ep": 0,
-      "sp": 34,
-      "cp": 76
+      "gp": 84,
+      "ep": 14,
+      "sp": 68,
+      "cp": 152
     },
     "skills": {
       "acr": {
@@ -1401,7 +1401,14 @@
       "flags": {
         "dnd5e": {
           "sourceId": "Compendium.dnd5e.races.Item.KL7wx9Q8XNJQir0k",
-          "advancementOrigin": "eRfgJRQJdRPFSbf5.QIrBmvSmNOTEJLWn"
+          "advancementOrigin": "eRfgJRQJdRPFSbf5.QIrBmvSmNOTEJLWn",
+          "last": {
+            "dnd5eactivity000": {
+              "damageType": {
+                "0": "cold"
+              }
+            }
+          }
         }
       },
       "img": "icons/magic/water/projectile-icecicle.webp",
@@ -1413,9 +1420,9 @@
         "coreVersion": "14.367",
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "lastModifiedBy": "zr08SjArog5AbTn3",
         "createdTime": 1788707461652,
-        "modifiedTime": 1788707461652
+        "modifiedTime": 1791722579215
       },
       "sort": 0,
       "folder": "TAw7621pFkXOkuYI",
@@ -2075,7 +2082,7 @@
         },
         "hd": {
           "denomination": "d8",
-          "spent": 0,
+          "spent": 2,
           "additional": ""
         },
         "properties": []
@@ -2091,9 +2098,9 @@
         "coreVersion": "14.367",
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "lastModifiedBy": "KK5vjOZlKGjpBzpt",
         "createdTime": 1788707461653,
-        "modifiedTime": 1788707461653
+        "modifiedTime": 1791119754445
       },
       "ownership": {
         "default": 0
@@ -14700,7 +14707,7 @@
               "type": "recoverAll"
             }
           ],
-          "spent": 0
+          "spent": 1
         },
         "type": {
           "value": "class",
@@ -14895,8 +14902,8 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707461381,
-        "modifiedTime": 1788707461382,
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "modifiedTime": 1791724881875,
+        "lastModifiedBy": "zr08SjArog5AbTn3",
         "exportSource": null,
         "compendiumSource": "Compendium.dnd5e.classfeatures.Item.YpiLQEKGalROn7iJ"
       }
@@ -15353,7 +15360,14 @@
         "dnd5e": {
           "sourceId": "Compendium.dnd5e.classfeatures.hEymt45rICi4f9eL",
           "advancementOrigin": "AD9TpaN6zrfvZUwa.4qh4ejxpwugva6ma",
-          "advancementRoot": "AD9TpaN6zrfvZUwa.4qh4ejxpwugva6ma"
+          "advancementRoot": "AD9TpaN6zrfvZUwa.4qh4ejxpwugva6ma",
+          "last": {
+            "dnd5eactivity000": {
+              "damageType": {
+                "0": "healing"
+              }
+            }
+          }
         }
       },
       "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
@@ -15366,8 +15380,8 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707461382,
-        "modifiedTime": 1789165387365,
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "modifiedTime": 1791724885122,
+        "lastModifiedBy": "zr08SjArog5AbTn3",
         "exportSource": null,
         "compendiumSource": "Compendium.dnd5e.classfeatures.Item.hEymt45rICi4f9eL"
       }
@@ -15377,81 +15391,7 @@
       "name": "Порча / Bane",
       "type": "spell",
       "img": "icons/magic/death/skull-horned-white-purple.webp",
-      "effects": [
-        {
-          "_id": "potjmpJPeUA1U4oe",
-          "flags": {},
-          "disabled": true,
-          "duration": {
-            "value": 60,
-            "units": "seconds",
-            "expiry": "turnStart",
-            "expired": false
-          },
-          "origin": "Item.KkaQm4OQJxc6z3to",
-          "tint": "#ffffff",
-          "transfer": true,
-          "name": "Порча",
-          "description": "",
-          "statuses": [],
-          "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
-            "coreVersion": "14.367",
-            "systemId": "dnd5e",
-            "systemVersion": "5.3.3",
-            "createdTime": 1788707481645,
-            "modifiedTime": 1788707481645,
-            "lastModifiedBy": "psL8euqpXqwLKuNe",
-            "exportSource": null
-          },
-          "img": "icons/magic/death/skull-horned-white-purple.webp",
-          "type": "base",
-          "system": {
-            "changes": [
-              {
-                "key": "system.bonuses.abilities.save",
-                "value": "-1d4",
-                "priority": null,
-                "type": "add",
-                "phase": "initial"
-              },
-              {
-                "key": "system.bonuses.mwak.attack",
-                "value": "-1d4",
-                "priority": null,
-                "type": "add",
-                "phase": "initial"
-              },
-              {
-                "key": "system.bonuses.msak.attack",
-                "value": "-1d4",
-                "priority": null,
-                "type": "add",
-                "phase": "initial"
-              },
-              {
-                "key": "system.bonuses.rsak.attack",
-                "value": "-1d4",
-                "priority": null,
-                "type": "add",
-                "phase": "initial"
-              },
-              {
-                "key": "system.bonuses.rwak.attack",
-                "value": "-1d4",
-                "priority": null,
-                "type": "add",
-                "phase": "initial"
-              }
-            ]
-          },
-          "sort": 0,
-          "start": null,
-          "showIcon": 1,
-          "folder": null
-        }
-      ],
+      "effects": [],
       "folder": "8Gb3FGPpThg4Obke",
       "flags": {
         "fifthpendium": {
@@ -21660,6 +21600,332 @@
         "N11E608YBVXORYMS": 3,
         "psL8euqpXqwLKuNe": 3
       }
+    },
+    {
+      "name": "Направление божественной энергии / Harness Divine Power",
+      "type": "feat",
+      "effects": [],
+      "system": {
+        "activities": {
+          "utilityHaDPclass": {
+            "type": "utility",
+            "_id": "utilityHaDPclass",
+            "img": "",
+            "sort": 0,
+            "activation": {
+              "type": "bonus",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "value": "1",
+                  "target": "hoEsuPm4MDN8zoEn",
+                  "scaling": {}
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "flags": {
+              "cat": {
+                "macros": {
+                  "roll": [
+                    {
+                      "source": "chris-premades",
+                      "rules": "2014",
+                      "identifier": "harness-divine-power"
+                    }
+                  ]
+                }
+              }
+            },
+            "range": {
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "prompt": true,
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft",
+                "stationary": false
+              },
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [
+                {
+                  "period": "lr",
+                  "type": "recoverAll"
+                }
+              ],
+              "max": "1"
+            },
+            "visibility": {
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false,
+              "identifier": ""
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false,
+              "name": "",
+              "formula": ""
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "confirmTargets": "default",
+              "automationOnly": false,
+              "identifier": "",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "otherActivityCompatible": false,
+              "otherActivityAsParentType": true,
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityId": "none",
+            "otherActivityAsParentType": true,
+            "name": ""
+          }
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "advancement": {},
+        "description": {
+          "value": "<p>На 2-м уровне вы можете потратить использование способности «<strong>Направление божественной энергии</strong>» для подпитки своих заклинаний. В качестве бонусного действия вы касаетесь своего священного символа, произносите молитву и восстанавливаете одну потраченную ячейку заклинания, уровень которой не превышает половину вашего бонуса мастерства (с округлением в большую сторону). Количество использований этого умения зависит от вашего уровня в данном классе: 2-й уровень — один раз; 6-й уровень — дважды; 18-й уровень — трижды. Вы восстанавливаете все потраченные использования после завершения продолжительного отдыха.</p>",
+          "chat": ""
+        },
+        "identifier": "harness-divine-power",
+        "source": {
+          "book": "TCoE",
+          "page": "",
+          "license": "",
+          "custom": "",
+          "rules": "2014",
+          "revision": 1
+        },
+        "crewed": false,
+        "enchant": {},
+        "prerequisites": {
+          "items": [],
+          "level": 2,
+          "repeatable": false
+        },
+        "properties": [],
+        "requirements": "",
+        "type": {
+          "value": "class",
+          "subtype": ""
+        }
+      },
+      "flags": {
+        "cat": {
+          "automation": {
+            "source": "chris-premades",
+            "version": "2.0.3"
+          }
+        },
+        "dnd5e": {
+          "advancementOrigin": "PZNSd7pd1tmTdLmw"
+        }
+      },
+      "img": "icons/environment/settlement/gazebo.webp",
+      "folder": "3c0NSnjmkxO9LGz0",
+      "_id": "krhAZqdtjzvNP5aj",
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790500411556,
+        "modifiedTime": 1791114887285,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": "Compendium.chris-premades.CPRFeatures2014.Item.TDo97RIbT2Nsg4at",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      }
+    },
+    {
+      "type": "equipment",
+      "name": "Повязка на глаза",
+      "_id": "MrTX4SxlmxVsDRZa",
+      "img": "systems/dnd5e/icons/svg/items/equipment.svg",
+      "system": {
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "identifier": "povyazka-na-glaza",
+        "source": {
+          "revision": 1,
+          "rules": "2014"
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "attuned": false,
+        "equipped": false,
+        "crew": {
+          "value": []
+        },
+        "armor": {
+          "value": null,
+          "dex": null
+        },
+        "proficient": null,
+        "properties": [],
+        "strength": null,
+        "type": {
+          "value": "",
+          "baseItem": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "3N3L036GVHOU2w7O": 3
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790505146735,
+        "modifiedTime": 1790505146736,
+        "lastModifiedBy": "3N3L036GVHOU2w7O",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
     }
   ],
   "effects": [
@@ -21683,7 +21949,7 @@
           {
             "key": "flags.midi-qol.actions.reactionCombatRound",
             "type": "override",
-            "value": 1,
+            "value": 2,
             "phase": "initial"
           }
         ]
@@ -21703,12 +21969,12 @@
       "type": "base",
       "disabled": false,
       "start": {
-        "time": 54,
-        "combat": "rccZds84ll3eX5DO",
-        "combatant": "R8BFtkkIHo5Tf1Ww",
-        "initiative": 8,
-        "round": 1,
-        "turn": 2
+        "time": 21915150,
+        "combat": "ej8KmmBIUoIjlWOm",
+        "combatant": "JvNhcr4zYNKXd0VU",
+        "initiative": 10,
+        "round": 2,
+        "turn": 8
       },
       "duration": {
         "value": null,
@@ -21726,76 +21992,9 @@
         "coreVersion": "14.367",
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
-        "createdTime": 1789492438551,
-        "modifiedTime": 1789493161330,
+        "createdTime": 1791727044522,
+        "modifiedTime": 1791727544876,
         "lastModifiedBy": "psL8euqpXqwLKuNe",
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null
-      }
-    },
-    {
-      "name": "Concentrating: Guidance",
-      "img": "systems/dnd5e/icons/svg/statuses/concentrating.svg",
-      "_id": "f0lexH1P2S4x6Bto",
-      "description": "<p>You are maintaining concentration on the effects of the 'Guidance' Spell.</p><hr><p>@Embed[Actor.lIvx6nZ8ltxzZuCP.Item.aEmz3laQj2ZZiKSb inline]</p>",
-      "duration": {
-        "value": 0,
-        "units": "turns",
-        "expiry": "turnStart",
-        "expired": false
-      },
-      "flags": {
-        "dnd5e": {
-          "activity": {
-            "type": "utility",
-            "id": "dnd5eactivity000",
-            "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.aEmz3laQj2ZZiKSb.Activity.dnd5eactivity000"
-          },
-          "item": {
-            "type": "spell",
-            "id": "aEmz3laQj2ZZiKSb",
-            "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.aEmz3laQj2ZZiKSb"
-          },
-          "scaling": false,
-          "spellLevel": 0
-        },
-        "dae": {
-          "specialDuration": []
-        },
-        "times-up": {
-          "durationSeconds": 60
-        }
-      },
-      "origin": "Actor.lIvx6nZ8ltxzZuCP.Item.aEmz3laQj2ZZiKSb",
-      "statuses": [
-        "concentrating"
-      ],
-      "type": "base",
-      "system": {
-        "changes": []
-      },
-      "disabled": false,
-      "start": {
-        "time": 54,
-        "combat": "rccZds84ll3eX5DO",
-        "combatant": "R8BFtkkIHo5Tf1Ww",
-        "initiative": 8,
-        "round": 1,
-        "turn": 2
-      },
-      "tint": "#ffffff",
-      "transfer": false,
-      "showIcon": 1,
-      "folder": null,
-      "sort": 0,
-      "_stats": {
-        "coreVersion": "14.367",
-        "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
-        "createdTime": 1789492504553,
-        "modifiedTime": 1789492504553,
-        "lastModifiedBy": "3N3L036GVHOU2w7O",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
@@ -21949,18 +22148,7 @@
                           "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
                           "type": "Item"
                         },
-                        "0-0": {
-                          "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.tXC0SktaoWoawa1U",
-                          "name": "Ready Action",
-                          "img": "icons/magic/time/hourglass-tilted-gray.webp",
-                          "type": "Item"
-                        },
-                        "1-0": {
-                          "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.YTjlhNiuCOUCKa2l",
-                          "name": "Ready Spell",
-                          "img": "icons/magic/nature/plant-sprout-hand-blue.webp",
-                          "type": "Item"
-                        },
+                        "1-0": null,
                         "2-0": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.vWo0CO4uYJ8XRnRi",
                           "name": "Breath Weapon - White",
@@ -21972,7 +22160,29 @@
                           }
                         },
                         "4-0": null,
-                        "0-1": null
+                        "0-1": null,
+                        "0-2": {
+                          "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.tXC0SktaoWoawa1U",
+                          "name": "Ready Action",
+                          "img": "icons/magic/time/hourglass-tilted-gray.webp",
+                          "type": "Item"
+                        },
+                        "0-0": {
+                          "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.krhAZqdtjzvNP5aj",
+                          "name": "Направление божественной энергии / Harness Divine Power",
+                          "img": "icons/environment/settlement/gazebo.webp",
+                          "type": "Item",
+                          "uses": {
+                            "value": 0,
+                            "max": 1
+                          }
+                        },
+                        "1-2": {
+                          "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.YTjlhNiuCOUCKa2l",
+                          "name": "Ready Spell",
+                          "img": "icons/magic/nature/plant-sprout-hand-blue.webp",
+                          "type": "Item"
+                        }
                       }
                     },
                     {
@@ -22005,42 +22215,42 @@
                           "name": "Bless",
                           "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         },
                         "4-0": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.LjT1wf4D38c9Ieuo",
                           "name": "Cure Wounds",
                           "img": "icons/magic/life/cross-worn-green.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         },
                         "1-1": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.pZMrJb3AXiRYO5E8",
                           "name": "Guiding Bolt",
                           "img": "icons/magic/fire/projectile-fireball-smoke-large-blue.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         },
                         "2-1": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.HpjaVMLEU14tJG7y",
                           "name": "Healing Word",
                           "img": "icons/magic/life/heart-cross-green.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         },
                         "3-1": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.0XhXTZGfCFskWoWN",
                           "name": "Споры телепатической связи / Rapport Spores",
                           "img": "icons/magic/control/energy-stream-link-white.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         },
                         "4-1": {
                           "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.9FrgmKwWCYPhlZ5w",
                           "name": "Bane",
                           "img": "icons/magic/unholy/strike-beam-blood-red-purple.webp",
                           "type": "Item",
-                          "depleted": true
+                          "depleted": false
                         }
                       }
                     },
@@ -22048,7 +22258,12 @@
                       "rows": 3,
                       "cols": 5,
                       "items": {
-                        "0-0": null,
+                        "0-0": {
+                          "uuid": "Macro.OX2pucsFSOy1YIa3",
+                          "name": "Ходы Подземелья",
+                          "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
+                          "type": "Macro"
+                        },
                         "4-0": {
                           "uuid": "Macro.HZVKCnl96Opmib0R",
                           "name": "Факел",
@@ -22083,18 +22298,7 @@
                   "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
                   "type": "Item"
                 },
-                "0-0": {
-                  "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.tXC0SktaoWoawa1U",
-                  "name": "Ready Action",
-                  "img": "icons/magic/time/hourglass-tilted-gray.webp",
-                  "type": "Item"
-                },
-                "1-0": {
-                  "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.YTjlhNiuCOUCKa2l",
-                  "name": "Ready Spell",
-                  "img": "icons/magic/nature/plant-sprout-hand-blue.webp",
-                  "type": "Item"
-                },
+                "1-0": null,
                 "2-0": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.vWo0CO4uYJ8XRnRi",
                   "name": "Breath Weapon - White",
@@ -22106,7 +22310,29 @@
                   }
                 },
                 "4-0": null,
-                "0-1": null
+                "0-1": null,
+                "0-2": {
+                  "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.tXC0SktaoWoawa1U",
+                  "name": "Ready Action",
+                  "img": "icons/magic/time/hourglass-tilted-gray.webp",
+                  "type": "Item"
+                },
+                "0-0": {
+                  "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.krhAZqdtjzvNP5aj",
+                  "name": "Направление божественной энергии / Harness Divine Power",
+                  "img": "icons/environment/settlement/gazebo.webp",
+                  "type": "Item",
+                  "uses": {
+                    "value": 0,
+                    "max": 1
+                  }
+                },
+                "1-2": {
+                  "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.YTjlhNiuCOUCKa2l",
+                  "name": "Ready Spell",
+                  "img": "icons/magic/nature/plant-sprout-hand-blue.webp",
+                  "type": "Item"
+                }
               }
             },
             {
@@ -22139,42 +22365,42 @@
                   "name": "Bless",
                   "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 },
                 "4-0": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.LjT1wf4D38c9Ieuo",
                   "name": "Cure Wounds",
                   "img": "icons/magic/life/cross-worn-green.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 },
                 "1-1": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.pZMrJb3AXiRYO5E8",
                   "name": "Guiding Bolt",
                   "img": "icons/magic/fire/projectile-fireball-smoke-large-blue.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 },
                 "2-1": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.HpjaVMLEU14tJG7y",
                   "name": "Healing Word",
                   "img": "icons/magic/life/heart-cross-green.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 },
                 "3-1": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.0XhXTZGfCFskWoWN",
                   "name": "Споры телепатической связи / Rapport Spores",
                   "img": "icons/magic/control/energy-stream-link-white.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 },
                 "4-1": {
                   "uuid": "Actor.lIvx6nZ8ltxzZuCP.Item.9FrgmKwWCYPhlZ5w",
                   "name": "Bane",
                   "img": "icons/magic/unholy/strike-beam-blood-red-purple.webp",
                   "type": "Item",
-                  "depleted": true
+                  "depleted": false
                 }
               }
             },
@@ -22182,7 +22408,12 @@
               "rows": 3,
               "cols": 5,
               "items": {
-                "0-0": null,
+                "0-0": {
+                  "uuid": "Macro.OX2pucsFSOy1YIa3",
+                  "name": "Ходы Подземелья",
+                  "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
+                  "type": "Macro"
+                },
                 "4-0": {
                   "uuid": "Macro.HZVKCnl96Opmib0R",
                   "name": "Факел",
@@ -22271,7 +22502,8 @@
       "characterSheetTabSectionOrganization": null,
       "characterSheetTabAutomaticallyIncludeUsableItems": null,
       "sheet-section-config": {},
-      "includeRitualsInCanCast": false
+      "includeRitualsInCanCast": false,
+      "skillsExpanded": false
     },
     "cat": {},
     "bg3-hud-dnd5e": {
@@ -22294,7 +22526,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
     "createdTime": 1788051266516,
-    "modifiedTime": 1789493383276,
+    "modifiedTime": 1791728137967,
     "lastModifiedBy": "psL8euqpXqwLKuNe"
   },
   "ownership": {

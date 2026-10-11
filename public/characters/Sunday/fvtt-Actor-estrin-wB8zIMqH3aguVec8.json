@@ -6,10 +6,10 @@
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 42,
-      "ep": 0,
-      "sp": 34,
-      "cp": 76
+      "gp": 99,
+      "ep": 14,
+      "sp": 68,
+      "cp": 152
     },
     "abilities": {
       "str": {
@@ -441,7 +441,7 @@
     },
     "spells": {
       "spell1": {
-        "value": 1
+        "value": 0
       },
       "spell2": {
         "value": 0
@@ -523,7 +523,7 @@
         "max": null,
         "temp": 0,
         "tempmax": 0,
-        "value": 17,
+        "value": 16,
         "bonuses": {}
       },
       "death": {
@@ -672,7 +672,7 @@
     "rotation": 0,
     "alpha": 1,
     "disposition": 1,
-    "displayBars": 0,
+    "displayBars": 40,
     "bar1": {
       "attribute": "attributes.hp"
     },
@@ -1856,7 +1856,7 @@
       "img": "icons/weapons/wands/wand-crook-yellow.webp",
       "system": {
         "description": {
-          "value": "<details><summary><strong>Описание друида</strong> <em>(нажмите, чтобы раскрыть описание)</em></summary><p>Вздымая над головой изогнутый посох, оплетённый падубом, эльфийка призывает ярость бури и обрушивает разряды молний на орков, вторгшихся с факелами в лес.<br>     Притаившись высоко в ветвях, человек в облике леопарда смотрит из джунглей на загадочное строение — храм Злого Стихийного Воздуха — и следит за действиями культистов.<br>     Размахивая клинком из чистого огня, полуэльф прорубается через толпу скелетов-солдат и сокрушает противоестественную магию, которая придавала этим жутким тварям подобие жизни.<br>     Друиды могут призывать стихийные силы природы или копировать существ из мира животных. Друиды — воплощение стойкости, коварства и ярости природы. Они не пытаются править природой, а, наоборот, сами служат исполнителями её неукротимой воли.</p><h2>Сила природы</h2><p>Превыше всего друиды почитают природу. Все их заклинания и прочие магические силы черпают энергию или из самой природы, или от природного божества. Многие друиды стремятся к трансцендентному духовному единству с природой, а не к служению конкретному божеству, другие же служат богам дикой природы, животных или стихийных сил. Древние традиции друидов порой называют Старой Верой, противопоставляя их современному почитанию богов в храмах и святилищах.<br>     Заклинания друидов связаны с природой и животными — мощь клыков и когтей, солнца и луны, пламени и бури. Друиды также могут принимать форму животных, а некоторые настолько углубляются в эту практику, что предпочитают находиться в теле животного, а не в своём.</p><h2>Сохранение равновесия</h2><p>С точки зрения друидов, в природе существует хрупкий баланс. Нужно поддерживать равновесие четырёх стихий, из которых состоит мир, — воздуха, земли, огня и воды. Если одна стихия захватит власть над другими, мир погибнет, его затянет в Стихийные планы, и он распадётся на составляющие. Поэтому друиды борются с культами Стихийного Зла и всеми другими, кто хочет поставить одну стихию выше других.<br>     Друиды также охраняют экологический баланс, поддерживающий жизнь животных и растений, и стремятся, чтобы цивилизованные народы жили с природой в гармонии, а не в борьбе. Друиды принимают естественную жестокость природы, но ненавидят всё, что противоестественно, в том числе аберрации (вроде бехолдеров и свежевателей разума) и нежить (вроде зомби и вампиров). Друиды порой возглавляют атаку на этих существ, особенно когда те сами вторгаются на земли друидов.<br>     Друиды часто охраняют священные места, а то и целые области нетронутой природы. Но когда возникает серьёзная опасность, угрожающая природному равновесию на их землях, друиды готовы принять бой и отправиться навстречу приключениям.</p><h2>Создаём друида</h2><p>Создавая друида, подумайте, почему ваш персонаж избрал тесную связь с природой. Возможно, он вырос в обществе, где Старая Вера ещё не забыта. А может, его бросили младенцем в чаще леса, где его и вырастил друид. Возможно, вашего персонажа потрясло столкновение с духами природы, он встретил гигантского орла или свирепого волка и чудом выжил. А может, ваш персонаж родился во время грандиозной бури или извержения вулкана и это истолковали как знак, что ему суждено стать друидом.</p><p>Всегда ли приключения были частью вашего призвания, или вы сперва ухаживали за священной рощей или источником? Может, вашу родину осквернило зло и вы отправились навстречу приключениям. чтобы найти себе новый дом и смысл жизни?<br><br></p><h3>Быстрое создание</h3><p>Вы можете создать друида быстро, следуя этим подсказкам. Сделайте Мудрость своей самой высокой характеристикой, а второй по величине — Выносливость. Происхождение персонажа — @Compendium[laaru-dnd5-hw.backgrounds.4lbFiNR9A9vlrSJo]{Отшельник}.</p></details><p>Если вы друид, у вас есть следующие классовые особенности:</p><h3>Здоровье</h3><p><strong>Кости здоровья</strong>: [[/r 1d8]] за каждый уровень друида.<br><strong>ПЗ на 1-м уровне</strong>: 8 + ваш модификатор Выносливости.<br><strong>ПЗ на следующих уровнях</strong>: [[/r 1d8]] (или 5) + ваш модификатор Выносливости за каждый уровень друида выше 1-го.</p><h3>Умения</h3><p><strong>Броня</strong>: лёгкая броня, средняя броня, щиты (друиды не носят броню и щиты, сделанные из металла).<br><strong>Оружие</strong>: боевые посохи, булавы, дротики, дубинки, кинжалы, копья, пилумы, пращи, серпы, скимитары.<br><strong>Инструменты</strong>: набор травника.</p><p><strong>Испытания</strong>: Интеллект, Мудрость.<br><strong>Навыки</strong>: выберите два из следующих: Внимание, Выживание, Дрессировка, Магия, Медицина, Природа, Проницательность или Религия.</p><h3>Снаряжение</h3><p>Вы начинаете с таким снаряжением в придачу к тому снаряжению, что вам даёт происхождение:</p><ul><li>(а) @Compendium[laaru-dnd5-hw.items.sSs3hSzkKBMNBgTs]{деревянный щит} или (б) любое @Compendium[laaru-dnd5-hw.items.P4NriMJQYytfPAqA]{простое оружие};</li><li>(а) @Compendium[laaru-dnd5-hw.items.fbC0Mg1a73wdFbqO]{Скимитар} или (б) любое @Compendium[laaru-dnd5-hw.items.P4NriMJQYytfPAqA]{простое оружие} ближнего боя;</li><li>@Compendium[laaru-dnd5-hw.items.WwdpHLXGX5r8uZu5]{Кожаный доспех}, @UUID[Compendium.laaru-dnd5-hw.items.Item.KweRAO2crhDn60XZ]{комплект первопроходца} и @Compendium[laaru-dnd5-hw.items.5WR5ZNUd36rXpevR]{фокусирующий предмет друида}.</li></ul><h1 style=\"border-bottom:2px solid var(--color-underline-header)\">Особенности класса друид</h1><table style=\"width:100%;height:17px\"><thead style=\"text-shadow:1px 1px var(--color-shadow-dark);border-bottom:1px solid var(--color-border-dark)\"><tr style=\"height:17px\"><td style=\"width:15%;height:17px\"><p style=\"text-align:center\"><strong>Уровень</strong></p></td><td style=\"width:15%;height:17px\"><p style=\"text-align:center\"><strong>Бонус умения</strong></p></td><td style=\"width:70%;height:17px\"><p><strong>Особенности</strong></p></td></tr></thead><tbody><tr><td><p style=\"text-align:center\">1</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.LzJ5ayHt0OlSVGxi]{Друидический язык},@Compendium[laaru-dnd5-hw.classfeatures.i6tPm3FNK13Ftc9v]{Заклинания}, @UUID[Compendium.laaru-dnd5-hw.classfeatures.4W8r5zxskUipGwo7]{Дополнительные заклинания друида (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">2</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1/4},@Compendium[laaru-dnd5-hw.classfeatures.u6Du2P9s81SWuGbi]{Круг друидов},@Compendium[laaru-dnd5-hw.classfeatures.ziW3quG5LMGyMbWC]{Дикий спутник (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">3</p></td><td><p style=\"text-align:center\">+2</p></td><td><p><strong>Ячейка заклинаний 2-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">4</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1/2},@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик},@Compendium[laaru-dnd5-hw.classfeatures.YLSZd61SPyqxljb3]{Универсальность фокусов (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">5</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Ячейка заклинаний 3-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">6</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">7</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Ячейка заклинаний 4-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">8</p></td><td><p style=\"text-align:center\">+3</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1},@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">9</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Ячейка заклинаний 5-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">10</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">11</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Ячейка заклинаний 6-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">12</p></td><td><p style=\"text-align:center\">+4</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">13</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Ячейка заклинаний 7-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">14</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">15</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Ячейка заклинаний 8-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">16</p></td><td><p style=\"text-align:center\">+5</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">17</p></td><td><p style=\"text-align:center\">+6</p></td><td><p><strong>Ячейка заклинаний 9-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">18</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.cVDEQo0ow1WJT7Wl]{Неувядающее тело},@Compendium[laaru-dnd5-hw.classfeatures.xvgPu1O57DgXCM86]{Заклинания зверя}</p></td></tr><tr><td><p style=\"text-align:center\">19</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">20</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.ip4bvmGoz3qkoqes]{Архидруид}</p></td></tr></tbody></table><h3>Священные деревья и другие растения</h3><p><span style=\"vertical-align:inherit\">Друиды почитают многие растения как священные, в особенности берёзу, бузину, дуб, иву, можжевельник, ольху, омелу, орешник, падуб, рябину, тис и ясень. Эти растения друиды часто используют как часть фокусирующих предметов, например дубовые или тисовые палки или побеги омелы. Кроме того, из такой древесины друиды делают и другие предметы, например оружие и щиты. Тис считается связанным со смертью и возрождением, так что рукояти скимитаров и серпов можно сделать из него. Ясень ассоциируется с жизнью, а дуб — с силой. Их древесина отлично подойдёт для многих видов оружия, например дубинок или боевых посохов, а также щитов. Ольха связана с воздухом, из неё хорошо делать метательное оружие вроде дротиков и пилумов. Друиды из тех краёв, где такие растения не растут, используют для своих целей другие растения. К примеру,пустынный друид может почитать юкку и кактусы.</span></p><h3>Друиды и боги</h3><p>Некоторые друиды поклоняются самим силам природы, но большинство всё-таки служит тому или иному божеству природы, каких много в мультивселенной (список этих богов см. Книге игрока). Поклонение этим богам — традиция более древняя, чем вера жрецов и городских жителей.</p><h2><span style=\"vertical-align:inherit\">Круги друидов</span></h2><p>Большинство чужаков понятия не имеет, что у друидов есть своя организация. Однако их сообщество охватывает все края света, не обращая внимания на политические границы. Все друиды номинально часть этого сообщества, хотя некоторые его члены живут в таком уединении, что ни разу не встречали высокопоставленных товарищей и не участвовали в собраниях друидов. Друг друга друиды считают братьями и сёстрами. Однако, как и дикие звери, друиды нередко соперничают.</p><p>@embed[Compendium.laaru-dnd5-hw.classfeatures.Item.u6Du2P9s81SWuGbi inline]{Круг друидов}</p>",
+          "value": "<details><summary><strong>Описание друида</strong> <em>(нажмите, чтобы раскрыть описание)</em></summary><p>Вздымая над головой изогнутый посох, оплетённый падубом, эльфийка призывает ярость бури и обрушивает разряды молний на орков, вторгшихся с факелами в лес.<br>     Притаившись высоко в ветвях, человек в облике леопарда смотрит из джунглей на загадочное строение — храм Злого Стихийного Воздуха — и следит за действиями культистов.<br>     Размахивая клинком из чистого огня, полуэльф прорубается через толпу скелетов-солдат и сокрушает противоестественную магию, которая придавала этим жутким тварям подобие жизни.<br>     Друиды могут призывать стихийные силы природы или копировать существ из мира животных. Друиды — воплощение стойкости, коварства и ярости природы. Они не пытаются править природой, а, наоборот, сами служат исполнителями её неукротимой воли.</p><h2>Сила природы</h2><p>Превыше всего друиды почитают природу. Все их заклинания и прочие магические силы черпают энергию или из самой природы, или от природного божества. Многие друиды стремятся к трансцендентному духовному единству с природой, а не к служению конкретному божеству, другие же служат богам дикой природы, животных или стихийных сил. Древние традиции друидов порой называют Старой Верой, противопоставляя их современному почитанию богов в храмах и святилищах.<br>     Заклинания друидов связаны с природой и животными — мощь клыков и когтей, солнца и луны, пламени и бури. Друиды также могут принимать форму животных, а некоторые настолько углубляются в эту практику, что предпочитают находиться в теле животного, а не в своём.</p><h2>Сохранение равновесия</h2><p>С точки зрения друидов, в природе существует хрупкий баланс. Нужно поддерживать равновесие четырёх стихий, из которых состоит мир, — воздуха, земли, огня и воды. Если одна стихия захватит власть над другими, мир погибнет, его затянет в Стихийные планы, и он распадётся на составляющие. Поэтому друиды борются с культами Стихийного Зла и всеми другими, кто хочет поставить одну стихию выше других.<br>     Друиды также охраняют экологический баланс, поддерживающий жизнь животных и растений, и стремятся, чтобы цивилизованные народы жили с природой в гармонии, а не в борьбе. Друиды принимают естественную жестокость природы, но ненавидят всё, что противоестественно, в том числе аберрации (вроде бехолдеров и свежевателей разума) и нежить (вроде зомби и вампиров). Друиды порой возглавляют атаку на этих существ, особенно когда те сами вторгаются на земли друидов.<br>     Друиды часто охраняют священные места, а то и целые области нетронутой природы. Но когда возникает серьёзная опасность, угрожающая природному равновесию на их землях, друиды готовы принять бой и отправиться навстречу приключениям.</p><h2>Создаём друида</h2><p>Создавая друида, подумайте, почему ваш персонаж избрал тесную связь с природой. Возможно, он вырос в обществе, где Старая Вера ещё не забыта. А может, его бросили младенцем в чаще леса, где его и вырастил друид. Возможно, вашего персонажа потрясло столкновение с духами природы, он встретил гигантского орла или свирепого волка и чудом выжил. А может, ваш персонаж родился во время грандиозной бури или извержения вулкана и это истолковали как знак, что ему суждено стать друидом.</p><p>Всегда ли приключения были частью вашего призвания, или вы сперва ухаживали за священной рощей или источником? Может, вашу родину осквернило зло и вы отправились навстречу приключениям. чтобы найти себе новый дом и смысл жизни?<br><br></p><h3>Быстрое создание</h3><p>Вы можете создать друида быстро, следуя этим подсказкам. Сделайте Мудрость своей самой высокой характеристикой, а второй по величине — Выносливость. Происхождение персонажа — @Compendium[laaru-dnd5-hw.backgrounds.4lbFiNR9A9vlrSJo]{Отшельник}.</p></details><p>Если вы друид, у вас есть следующие классовые особенности:</p><h3>Здоровье</h3><p><strong>Кости здоровья</strong>: [[/r 1d8]] за каждый уровень друида.<br><strong>ПЗ на 1-м уровне</strong>: 8 + ваш модификатор Выносливости.<br><strong>ПЗ на следующих уровнях</strong>: [[/r 1d8]] (или 5) + ваш модификатор Выносливости за каждый уровень друида выше 1-го.</p><h3>Умения</h3><p><strong>Броня</strong>: лёгкая броня, средняя броня, щиты (друиды не носят броню и щиты, сделанные из металла).<br><strong>Оружие</strong>: боевые посохи, булавы, дротики, дубинки, кинжалы, копья, пилумы, пращи, серпы, скимитары.<br><strong>Инструменты</strong>: набор травника.</p><p><strong>Испытания</strong>: Интеллект, Мудрость.<br><strong>Навыки</strong>: выберите два из следующих: Внимание, Выживание, Дрессировка, Магия, Медицина, Природа, Проницательность или Религия.</p><h3>Снаряжение</h3><p>Вы начинаете с таким снаряжением в придачу к тому снаряжению, что вам даёт происхождение:</p><ul><li><p>(а) @Compendium[laaru-dnd5-hw.items.sSs3hSzkKBMNBgTs]{деревянный щит} или (б) любое @Compendium[laaru-dnd5-hw.items.P4NriMJQYytfPAqA]{простое оружие};</p></li><li><p>(а) @Compendium[laaru-dnd5-hw.items.fbC0Mg1a73wdFbqO]{Скимитар} или (б) любое @Compendium[laaru-dnd5-hw.items.P4NriMJQYytfPAqA]{простое оружие} ближнего боя;</p></li><li><p>@Compendium[laaru-dnd5-hw.items.WwdpHLXGX5r8uZu5]{Кожаный доспех}, @UUID[Compendium.laaru-dnd5-hw.items.Item.KweRAO2crhDn60XZ]{комплект первопроходца} и @Compendium[laaru-dnd5-hw.items.5WR5ZNUd36rXpevR]{фокусирующий предмет друида}.</p></li></ul><h1 style=\"border-bottom:2px solid var(--color-underline-header)\">Особенности класса друид</h1><table style=\"width:100%;height:17px\"><thead style=\"text-shadow:1px 1px var(--color-shadow-dark);border-bottom:1px solid var(--color-border-dark)\"><tr style=\"height:17px\"><td style=\"width:15%;height:17px\"><p style=\"text-align:center\"><strong>Уровень</strong></p></td><td style=\"width:15%;height:17px\"><p style=\"text-align:center\"><strong>Бонус умения</strong></p></td><td style=\"width:70%;height:17px\"><p><strong>Особенности</strong></p></td></tr></thead><tbody><tr><td><p style=\"text-align:center\">1</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.LzJ5ayHt0OlSVGxi]{Друидический язык},@Compendium[laaru-dnd5-hw.classfeatures.i6tPm3FNK13Ftc9v]{Заклинания}, @UUID[Compendium.laaru-dnd5-hw.classfeatures.4W8r5zxskUipGwo7]{Дополнительные заклинания друида (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">2</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1/4},@Compendium[laaru-dnd5-hw.classfeatures.u6Du2P9s81SWuGbi]{Круг друидов},@Compendium[laaru-dnd5-hw.classfeatures.ziW3quG5LMGyMbWC]{Дикий спутник (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">3</p></td><td><p style=\"text-align:center\">+2</p></td><td><p><strong>Ячейка заклинаний 2-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">4</p></td><td><p style=\"text-align:center\">+2</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1/2},@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик},@Compendium[laaru-dnd5-hw.classfeatures.YLSZd61SPyqxljb3]{Универсальность фокусов (Опционально)}</p></td></tr><tr><td><p style=\"text-align:center\">5</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Ячейка заклинаний 3-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">6</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">7</p></td><td><p style=\"text-align:center\">+3</p></td><td><p><strong>Ячейка заклинаний 4-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">8</p></td><td><p style=\"text-align:center\">+3</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.swK0r5TOIxredxWS]{Дикий облик (макс. КО 1},@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">9</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Ячейка заклинаний 5-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">10</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">11</p></td><td><p style=\"text-align:center\">+4</p></td><td><p><strong>Ячейка заклинаний 6-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">12</p></td><td><p style=\"text-align:center\">+4</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">13</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Ячейка заклинаний 7-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">14</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Особенности круга друидов</strong></p></td></tr><tr><td><p style=\"text-align:center\">15</p></td><td><p style=\"text-align:center\">+5</p></td><td><p><strong>Ячейка заклинаний 8-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">16</p></td><td><p style=\"text-align:center\">+5</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">17</p></td><td><p style=\"text-align:center\">+6</p></td><td><p><strong>Ячейка заклинаний 9-го круга</strong></p></td></tr><tr><td><p style=\"text-align:center\">18</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.cVDEQo0ow1WJT7Wl]{Неувядающее тело},@Compendium[laaru-dnd5-hw.classfeatures.xvgPu1O57DgXCM86]{Заклинания зверя}</p></td></tr><tr><td><p style=\"text-align:center\">19</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.s0Cc2zcX0JzIgam5]{Повышение характеристик}</p></td></tr><tr><td><p style=\"text-align:center\">20</p></td><td><p style=\"text-align:center\">+6</p></td><td><p>@Compendium[laaru-dnd5-hw.classfeatures.ip4bvmGoz3qkoqes]{Архидруид}</p></td></tr></tbody></table><h3>Священные деревья и другие растения</h3><p><span style=\"vertical-align:inherit\">Друиды почитают многие растения как священные, в особенности берёзу, бузину, дуб, иву, можжевельник, ольху, омелу, орешник, падуб, рябину, тис и ясень. Эти растения друиды часто используют как часть фокусирующих предметов, например дубовые или тисовые палки или побеги омелы. Кроме того, из такой древесины друиды делают и другие предметы, например оружие и щиты. Тис считается связанным со смертью и возрождением, так что рукояти скимитаров и серпов можно сделать из него. Ясень ассоциируется с жизнью, а дуб — с силой. Их древесина отлично подойдёт для многих видов оружия, например дубинок или боевых посохов, а также щитов. Ольха связана с воздухом, из неё хорошо делать метательное оружие вроде дротиков и пилумов. Друиды из тех краёв, где такие растения не растут, используют для своих целей другие растения. К примеру,пустынный друид может почитать юкку и кактусы.</span></p><h3>Друиды и боги</h3><p>Некоторые друиды поклоняются самим силам природы, но большинство всё-таки служит тому или иному божеству природы, каких много в мультивселенной (список этих богов см. Книге игрока). Поклонение этим богам — традиция более древняя, чем вера жрецов и городских жителей.</p><h2><span style=\"vertical-align:inherit\">Круги друидов</span></h2><p>Большинство чужаков понятия не имеет, что у друидов есть своя организация. Однако их сообщество охватывает все края света, не обращая внимания на политические границы. Все друиды номинально часть этого сообщества, хотя некоторые его члены живут в таком уединении, что ни разу не встречали высокопоставленных товарищей и не участвовали в собраниях друидов. Друг друга друиды считают братьями и сёстрами. Однако, как и дикие звери, друиды нередко соперничают.</p><p>@embed[Compendium.laaru-dnd5-hw.classfeatures.Item.u6Du2P9s81SWuGbi inline]{Круг друидов}</p>",
           "chat": ""
         },
         "source": {
@@ -2766,7 +2766,7 @@
         "wealth": "",
         "hd": {
           "denomination": "d8",
-          "spent": 0,
+          "spent": 1,
           "additional": ""
         },
         "startingEquipment": [],
@@ -2786,7 +2786,7 @@
         "systemVersion": "5.3.3",
         "coreVersion": "14.367",
         "createdTime": 1788707494350,
-        "modifiedTime": 1788707494350,
+        "modifiedTime": 1791725319167,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classes.Item.ygVYgPbJkaH0tH1N",
         "duplicateSource": null,
@@ -3129,326 +3129,6 @@
       "sort": 0,
       "ownership": {
         "default": 0,
-        "psL8euqpXqwLKuNe": 3
-      }
-    },
-    {
-      "_id": "5WPNv7kCoPHwrIbJ",
-      "name": "Друидизм / Druidcraft",
-      "type": "spell",
-      "img": "icons/magic/nature/lotus-glow-pink.webp",
-      "effects": [],
-      "folder": "lBXxCIps7HPa9Q2o",
-      "flags": {
-        "srd5e": {
-          "page": "",
-          "source": "PHB",
-          "hash": "druidcraft_phb"
-        },
-        "betterRolls5e": {
-          "critRange": {
-            "type": "String",
-            "value": null
-          },
-          "critDamage": {
-            "type": "String",
-            "value": ""
-          },
-          "quickDesc": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickAttack": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickSave": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickDamage": {
-            "type": "Array",
-            "value": [],
-            "altValue": [],
-            "context": []
-          },
-          "quickVersatile": {
-            "type": "Boolean",
-            "value": false,
-            "altValue": false
-          },
-          "quickProperties": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickCharges": {
-            "type": "Boolean",
-            "value": {
-              "use": true,
-              "resource": true
-            },
-            "altValue": {
-              "use": true,
-              "resource": true
-            }
-          },
-          "quickTemplate": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickOther": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true,
-            "context": ""
-          },
-          "quickFlavor": {
-            "type": "Boolean",
-            "value": true,
-            "altValue": true
-          },
-          "quickPrompt": {
-            "type": "Boolean",
-            "value": false,
-            "altValue": false
-          }
-        },
-        "core": {},
-        "babele": {
-          "hasTranslation": true,
-          "originalName": "Druidcraft",
-          "translated": true
-        },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ],
-          "persistSourceMigration": true,
-          "sourceId": "Compendium.laaru-dnd5-hw.spells.Item.nVWBsPzqAxaTl8np",
-          "advancementOrigin": "vhmJScJyHFqM7ABC.FnzJ8GdyDt3YuzTq",
-          "advancementRoot": "vhmJScJyHFqM7ABC.FnzJ8GdyDt3YuzTq"
-        },
-        "tidy5e-sheet": {
-          "action-filter-override": true
-        }
-      },
-      "system": {
-        "description": {
-          "value": "<p>Шепча духам природы, вы создаёте один из этих эффектов в пределах дистанции:</p>\n<ul>\n<li>Вы вызываете маленький безвредный сенсорный эффект, предсказывающий, какой будет на этом месте погода в ближайшие 24 часа. Эффект может проявиться в виде золотого шара, если небеса будут ясные, облачка — если ожидается дождь, снежинок — если будет снег, и так далее. Эффект длится 1 раунд.</li>\n<li>Вы мгновенно заставляете цветок расцвести, семя раскрыться или почку — превратиться в листья.</li>\n<li>Вы вызываете мгновенный безвредный сенсорный эффект вроде падающих листьев, дуновения ветра, звука небольшого животного или слабого запаха скунса. Эффект должен поместиться в 5-футовый куб. </li>\n<li>Вы мгновенно зажигаете или гасите свечу, факел или небольшой костерок.</li>\n</ul>",
-          "chat": ""
-        },
-        "source": {
-          "custom": "PHB",
-          "book": "PHB",
-          "revision": 1,
-          "rules": "2014"
-        },
-        "activation": {
-          "type": "action",
-          "condition": "",
-          "value": 1
-        },
-        "duration": {
-          "value": "",
-          "units": "inst"
-        },
-        "target": {
-          "affects": {
-            "choice": false
-          },
-          "template": {
-            "units": "ft",
-            "contiguous": false,
-            "stationary": false
-          }
-        },
-        "range": {
-          "value": "30",
-          "units": "ft"
-        },
-        "uses": {
-          "max": "",
-          "spent": 0,
-          "recovery": []
-        },
-        "ability": "wis",
-        "level": 0,
-        "school": "trs",
-        "materials": {
-          "value": "",
-          "consumed": false,
-          "cost": 0,
-          "supply": 0
-        },
-        "properties": [
-          "vocal",
-          "somatic"
-        ],
-        "activities": {
-          "dnd5eactivity000": {
-            "_id": "dnd5eactivity000",
-            "type": "utility",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": false
-            },
-            "consumption": {
-              "targets": [],
-              "scaling": {
-                "allowed": false,
-                "max": ""
-              },
-              "spellSlot": true
-            },
-            "description": {
-              "chatFlavor": ""
-            },
-            "duration": {
-              "units": "inst",
-              "concentration": false,
-              "override": false
-            },
-            "effects": [],
-            "range": {
-              "override": false,
-              "units": "self"
-            },
-            "target": {
-              "prompt": true,
-              "template": {
-                "contiguous": false,
-                "units": "ft",
-                "stationary": false
-              },
-              "affects": {
-                "choice": false
-              },
-              "override": false
-            },
-            "uses": {
-              "spent": 0,
-              "max": "",
-              "recovery": []
-            },
-            "roll": {
-              "formula": "",
-              "name": "",
-              "prompt": false,
-              "visible": false
-            },
-            "sort": 0,
-            "img": null,
-            "flags": {},
-            "visibility": {
-              "level": {},
-              "requireAttunement": false,
-              "requireIdentification": false,
-              "requireMagic": false
-            },
-            "useConditionText": "",
-            "useConditionReason": "",
-            "effectConditionText": "",
-            "macroData": {
-              "name": "",
-              "command": ""
-            },
-            "ignoreTraits": {
-              "idi": false,
-              "idr": false,
-              "idv": false,
-              "ida": false,
-              "idm": false
-            },
-            "midiProperties": {
-              "ignoreTraits": [],
-              "triggeredActivityId": "none",
-              "triggeredActivityConditionText": "",
-              "triggeredActivityTargets": "targets",
-              "triggeredActivityRollAs": "self",
-              "triggeredActivityConsume": true,
-              "triggeredActivityConfigure": true,
-              "autoConsume": false,
-              "forceConsumeDialog": "default",
-              "forceRollDialog": "default",
-              "forceDamageDialog": "default",
-              "confirmTargets": "default",
-              "autoTargetType": "any",
-              "autoTargetAction": "default",
-              "automationOnly": false,
-              "otherActivityCompatible": true,
-              "otherActivityAsParentType": true,
-              "identifier": "",
-              "displayActivityName": false,
-              "rollMode": "default",
-              "chooseEffects": false,
-              "toggleEffect": false,
-              "ignoreFullCover": false,
-              "removeChatButtons": "default",
-              "magicEffect": false,
-              "magicDamage": false,
-              "noConcentrationCheck": false,
-              "skipConcentrationCheck": false,
-              "autoCEEffects": "default"
-            },
-            "isOverTimeFlag": false,
-            "overTimeProperties": {
-              "saveRemoves": true,
-              "rollAs": "target",
-              "preRemoveConditionText": "",
-              "postRemoveConditionText": ""
-            },
-            "regionBehavior": {
-              "enabled": false,
-              "dispositionFilter": -1,
-              "excludeSource": true,
-              "oncePerTurn": true,
-              "wallRestriction": "none",
-              "regionVisibility": 2,
-              "attachToken": "default",
-              "rules": []
-            },
-            "regionLight": {
-              "enabled": false,
-              "dim": 0,
-              "bright": 0,
-              "color": null,
-              "alpha": 0.5,
-              "luminosity": 0.5,
-              "animationType": "",
-              "animationSpeed": 5,
-              "animationIntensity": 5
-            },
-            "otherActivityId": "none",
-            "otherActivityAsParentType": true
-          }
-        },
-        "identifier": "druidizm--druidcraft",
-        "method": "spell",
-        "prepared": 2,
-        "sourceItem": "class:druid"
-      },
-      "_stats": {
-        "compendiumSource": "Compendium.laaru-dnd5-hw.spells.Item.nVWBsPzqAxaTl8np",
-        "duplicateSource": null,
-        "coreVersion": "14.367",
-        "systemId": "dnd5e",
-        "systemVersion": "5.3.3",
-        "createdTime": 1788707494350,
-        "modifiedTime": 1788707494350,
-        "lastModifiedBy": "8ylbyi009MpNP6U0",
-        "exportSource": null
-      },
-      "sort": 900000,
-      "ownership": {
-        "default": 0,
-        "T0BtUpu1XTcoijv3": 3,
         "psL8euqpXqwLKuNe": 3
       }
     },
@@ -3798,7 +3478,7 @@
       "name": "Боевой посох / Quarterstaff",
       "type": "weapon",
       "folder": "8ew9iJNtV8gedG1m",
-      "img": "icons/weapons/staves/staff-simple-gold.webp",
+      "img": "icons/weapons/staves/staff-nature-spiral.webp",
       "system": {
         "description": {
           "value": "<p>Толстое деревянное древко, обмотанное крепкой рукоятью, превращается в весьма функциональное оружие, которое также можно использовать как прочную трость.</p>",
@@ -3820,7 +3500,7 @@
           "denomination": "sp"
         },
         "attunement": "",
-        "equipped": false,
+        "equipped": true,
         "rarity": "",
         "identified": true,
         "cover": null,
@@ -4119,8 +3799,8 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494351,
-        "modifiedTime": 1789304626992,
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "modifiedTime": 1791727813827,
+        "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
       "sort": 0,
@@ -4219,7 +3899,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494351,
-        "modifiedTime": 1788707494351,
+        "modifiedTime": 1791727801802,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
@@ -9032,11 +8712,19 @@
         "fifthpendium": {
           "spellGiver": "druid"
         },
-        "dnd5e": {}
+        "dnd5e": {
+          "last": {
+            "dnd5eactivity000": {
+              "damageType": {
+                "0": "healing"
+              }
+            }
+          }
+        }
       },
       "system": {
         "description": {
-          "value": "<div class=\"rd__spc-inline-post\"><p>Выбранное вами существо, которое вы видите в пределах дистанции, восстанавливает ПЗ в количестве  [[/r 1d4]] + модификатор вашей заклинательной характеристики. Заклинание не действует на нежить и конструкции.</p><p><strong>На высоких кругах</strong>. Если вы сотворяете это заклинание, используя ячейку 2-го круга или выше, исцеление увеличивается на  [[/r 1d4]] за каждый круг ячейки выше 1-го.</p></div>",
+          "value": "<div class=\"rd__spc-inline-post\"><p>Выбранное вами существо, которое вы видите в пределах дистанции, восстанавливает ПЗ в количестве  [[/r 2d4]] + модификатор вашей заклинательной характеристики. Заклинание не действует на нежить и конструкции.</p><p><strong>На высоких кругах</strong>. Если вы сотворяете это заклинание, используя ячейку 2-го круга или выше, исцеление увеличивается на  [[/r 2d4]] за каждый круг ячейки выше 1-го.</p></div>",
           "chat": ""
         },
         "source": {
@@ -9135,7 +8823,7 @@
               "recovery": []
             },
             "healing": {
-              "number": 1,
+              "number": 2,
               "denomination": 4,
               "bonus": "@mod",
               "types": [
@@ -9147,15 +8835,18 @@
               },
               "scaling": {
                 "mode": "whole",
-                "number": 1,
+                "number": 2,
                 "formula": ""
               }
             },
             "sort": 0,
-            "img": null,
+            "img": "",
             "flags": {},
             "visibility": {
-              "level": {},
+              "level": {
+                "min": null,
+                "max": null
+              },
               "requireAttunement": false,
               "requireIdentification": false,
               "requireMagic": false
@@ -9233,12 +8924,13 @@
               "animationSpeed": 5,
               "animationIntensity": 5
             },
-            "otherActivityId": null
+            "name": "",
+            "otherActivityId": ""
           }
         },
         "identifier": "iscelyayushee-slovo--healing-word",
         "method": "spell",
-        "prepared": 0,
+        "prepared": 1,
         "sourceItem": "druid"
       },
       "_stats": {
@@ -9248,7 +8940,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494356,
-        "modifiedTime": 1788707494356,
+        "modifiedTime": 1791116357572,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
@@ -11686,7 +11378,7 @@
         },
         "identifier": "razgovor-s-zhivotnymi--speak-with-animals",
         "method": "spell",
-        "prepared": 1,
+        "prepared": 0,
         "sourceItem": "druid"
       },
       "_stats": {
@@ -11696,7 +11388,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494359,
-        "modifiedTime": 1788707494359,
+        "modifiedTime": 1791713563114,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
@@ -22904,7 +22596,12 @@
         },
         "core": {},
         "dnd5e": {
-          "persistSourceMigration": true
+          "persistSourceMigration": true,
+          "last": {
+            "dnd5eactivity000": {
+              "attackMode": "oneHanded"
+            }
+          }
         },
         "midi-qol": {
           "fumbleThreshold": null,
@@ -22932,7 +22629,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494375,
-        "modifiedTime": 1788707494375,
+        "modifiedTime": 1791727801801,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
@@ -23216,7 +22913,7 @@
           "value": []
         },
         "attuned": false,
-        "equipped": true
+        "equipped": false
       },
       "effects": [],
       "flags": {
@@ -23255,8 +22952,8 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707494375,
-        "modifiedTime": 1789304626993,
-        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "modifiedTime": 1791727813827,
+        "lastModifiedBy": "8ylbyi009MpNP6U0",
         "exportSource": null
       },
       "sort": 0,
@@ -23588,7 +23285,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707484004,
-        "modifiedTime": 1788707484010,
+        "modifiedTime": 1791725319506,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classfeatures.Item.swK0r5TOIxredxWS",
         "duplicateSource": null,
@@ -24173,7 +23870,7 @@
     },
     {
       "_id": "u60fQhkuwSg578SL",
-      "name": "Тотем духов",
+      "name": "Тотем духов / Spirit Totem",
       "type": "feat",
       "img": "icons/commodities/treasure/totem-wooden-glowing-green.webp",
       "effects": [],
@@ -24185,12 +23882,27 @@
           "migratedUses": 1,
           "sourceId": "Compendium.laaru-dnd5-hw.classfeatures.jSPMdCEtfFKEuW3h",
           "advancementOrigin": "qu0DtIDCIs1gt8rX.u5i61tbi1k7fw9iy",
-          "advancementRoot": "qu0DtIDCIs1gt8rX.u5i61tbi1k7fw9iy"
+          "advancementRoot": "qu0DtIDCIs1gt8rX.u5i61tbi1k7fw9iy",
+          "last": {
+            "cxxwKE62HyiL0P6A": {
+              "damageType": {
+                "0": "temphp"
+              }
+            },
+            "duABmKsDRDWhaAZx": {
+              "damageType": {
+                "0": "healing"
+              }
+            }
+          }
+        },
+        "cat": {
+          "genericConfig": {}
         }
       },
       "system": {
         "description": {
-          "value": "<p>Начиная с 2 уровня, вы можете вызывать духов природы, чтобы влиять на окружающий вас мир. В качестве бонусного действия вы можете магией вызвать бестелесный дух в точке, которую вы можете видеть в <strong>60 футах</strong> от вас. Дух создает ауру в радиусе <strong>30 футов</strong> вокруг этой точки. Он не считается ни существом, ни объектом, хотя он имеет спектральный вид существа, которое представляет.</p>\n<p>Бонусным действия вы можете перемещать дух до <strong>60 футов</strong> в точку, видимую вами. Дух остаётся в течение <strong>1 минуты</strong> или пока вы &amp;reference[incapacitated]{не выйдете из строя}. После использования этой способности вы не сможете использовать её снова, пока не завершите короткий или долгий отдых.</p>\n<p>Эффект ауры духа зависит от типа духа, который вы вызываете из вариантов ниже.</p>\n<p><strong>Дух медведя</strong>. Дух медведя даёт вам и вашим союзникам силу и выносливость. Каждое выбранное вами существо из тех, кто находится в области ауры в момент появления духа, получает временные ПЗ в количестве, равном <strong>5</strong> + ваш <strong>уровень друида</strong>. Кроме того, вы и ваши союзники получаете преимущество на проверки <strong>Силы </strong>и испытания <strong>Силы</strong>, пока находитесь в ауре.</p>\n<p><strong>Дух ястреба</strong>. Дух ястреба – непревзойденный охотник, помогающий вам и вашим союзникам своим острым взглядом. Когда существо совершает бросок атаки по цели, находящейся в ауре духа, вы можете использовать @Compendium[laaru-dnd5-hw.actions.mMwkUE20bEfKeetq]{ответное действие}, чтобы дать преимущество на этот бросок. Кроме того, вы и ваши союзники получаете преимущество на проверки <strong>Мудрости </strong>(Внимание), пока находитесь в ауре.</p>\n<p><strong>Дух единорога</strong>. Дух единорога защищает окружающих. Вы и ваши союзники получаете преимущество на все проверки способностей, совершаемые для обнаружения существ в ауре духа. Кроме того, если вы сотворяете заклинание, используя ячейку заклинания, которое восстанавливает ПЗ любого существа внутри или вне ауры, существа по вашему выбору, находящиеся внутри ауры, также восстанавливают ПЗ в количестве, равном вашему уровню друида.</p>",
+          "value": "<p>Начиная с 2 уровня, вы можете вызывать духов природы, чтобы влиять на окружающий вас мир. В качестве бонусного действия вы можете магией вызвать бестелесный дух в точке, которую вы можете видеть в <strong>60 футах</strong> от вас. Дух создает ауру в радиусе <strong>30 футов</strong> вокруг этой точки. Он не считается ни существом, ни объектом, хотя он имеет спектральный вид существа, которое представляет.</p><p>Бонусным действия вы можете перемещать дух до <strong>60 футов</strong> в точку, видимую вами. Дух остаётся в течение <strong>1 минуты</strong> или пока вы &amp;reference[incapacitated]{не выйдете из строя}. После использования этой способности вы не сможете использовать её снова, пока не завершите короткий или долгий отдых.</p><p>Эффект ауры духа зависит от типа духа, который вы вызываете из вариантов ниже.</p><p><strong>Дух медведя</strong>. Дух медведя даёт вам и вашим союзникам силу и выносливость. Каждое выбранное вами существо из тех, кто находится в области ауры в момент появления духа, получает временные ПЗ в количестве, равном <strong>5</strong> + ваш <strong>уровень друида</strong>. Кроме того, вы и ваши союзники получаете преимущество на проверки <strong>Силы </strong>и испытания <strong>Силы</strong>, пока находитесь в ауре.</p><p><strong>Дух ястреба</strong>. Дух ястреба – непревзойденный охотник, помогающий вам и вашим союзникам своим острым взглядом. Когда существо совершает бросок атаки по цели, находящейся в ауре духа, вы можете использовать @Compendium[laaru-dnd5-hw.actions.mMwkUE20bEfKeetq]{ответное действие}, чтобы дать преимущество на этот бросок. Кроме того, вы и ваши союзники получаете преимущество на проверки <strong>Мудрости </strong>(Внимание), пока находитесь в ауре.</p><p><strong>Дух единорога</strong>. Дух единорога защищает окружающих. Вы и ваши союзники получаете преимущество на все проверки способностей, совершаемые для обнаружения существ в ауре духа. Кроме того, если вы сотворяете заклинание, используя ячейку заклинания, которое восстанавливает ПЗ любого существа внутри или вне ауры, существа по вашему выбору, находящиеся внутри ауры, также восстанавливают ПЗ в количестве, равном вашему уровню друида.</p>",
           "chat": ""
         },
         "source": {
@@ -24206,7 +23918,7 @@
               "type": "recoverAll"
             }
           ],
-          "spent": 0
+          "spent": 1
         },
         "requirements": "Druid 2 (Shepherd)",
         "cover": null,
@@ -24222,93 +23934,100 @@
         },
         "properties": [],
         "activities": {
-          "dnd5eactivity000": {
-            "_id": "dnd5eactivity000",
-            "type": "utility",
+          "cxxwKE62HyiL0P6A": {
+            "type": "heal",
+            "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+            "sort": 100000,
             "activation": {
               "type": "bonus",
-              "value": 1,
-              "condition": "",
-              "override": false
+              "override": false,
+              "condition": ""
             },
             "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
               "targets": [
                 {
                   "type": "itemUses",
-                  "target": "",
                   "value": "1",
-                  "scaling": {
-                    "mode": "",
-                    "formula": ""
-                  }
+                  "scaling": {}
                 }
-              ],
-              "scaling": {
-                "allowed": false,
-                "max": ""
-              },
-              "spellSlot": true
+              ]
             },
             "description": {
               "chatFlavor": ""
             },
             "duration": {
-              "concentration": false,
-              "value": "",
               "units": "inst",
-              "special": "",
+              "concentration": false,
               "override": false
             },
-            "effects": [],
+            "effects": [
+              {
+                "_id": "pLgsxgDJRQOwzu72",
+                "level": {}
+              }
+            ],
+            "flags": {},
             "range": {
-              "value": "60",
-              "units": "ft",
-              "special": "",
-              "override": false
+              "units": "spec",
+              "override": false,
+              "special": ""
             },
             "target": {
               "template": {
-                "count": "",
                 "contiguous": false,
-                "type": "",
-                "size": "",
-                "width": "",
-                "height": "",
+                "stationary": false,
                 "units": "ft",
-                "stationary": false
+                "count": "",
+                "type": "circle",
+                "size": "30"
               },
               "affects": {
-                "count": "1",
-                "type": "space",
                 "choice": false,
+                "count": "",
+                "type": "ally",
                 "special": ""
               },
-              "prompt": true,
-              "override": false
+              "override": false,
+              "prompt": true
             },
             "uses": {
               "spent": 0,
-              "max": "",
-              "recovery": []
+              "recovery": [],
+              "max": ""
             },
-            "roll": {
-              "formula": "",
-              "name": "",
-              "prompt": false,
-              "visible": false
-            },
-            "img": null,
-            "sort": 0,
-            "flags": {},
             "visibility": {
-              "level": {},
+              "level": {
+                "min": null,
+                "max": null
+              },
               "requireAttunement": false,
               "requireIdentification": false,
-              "requireMagic": false
+              "requireMagic": false,
+              "identifier": ""
+            },
+            "healing": {
+              "types": [
+                "temphp"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@classes.druid.levels+5"
+              },
+              "scaling": {
+                "number": 1
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": ""
             },
             "useConditionText": "",
             "useConditionReason": "",
             "effectConditionText": "",
+            "otherActivityId": "none",
             "macroData": {
               "name": "",
               "command": ""
@@ -24379,8 +24098,344 @@
               "animationSpeed": 5,
               "animationIntensity": 5
             },
+            "name": "Дух медведя - временное здоровье",
+            "_id": "cxxwKE62HyiL0P6A"
+          },
+          "N4M3QJogw4u7Gq50": {
+            "type": "summon",
+            "_id": "N4M3QJogw4u7Gq50",
+            "img": "icons/commodities/treasure/figurine-owl.webp",
+            "sort": 200000,
+            "activation": {
+              "type": "bonus",
+              "override": false,
+              "condition": ""
+            },
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": []
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "flags": {},
+            "range": {
+              "units": "self",
+              "override": false,
+              "special": ""
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "stationary": false,
+                "units": "ft",
+                "type": ""
+              },
+              "affects": {
+                "choice": false,
+                "type": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false,
+              "identifier": ""
+            },
+            "bonuses": {
+              "ac": "",
+              "hd": "",
+              "hp": "",
+              "attackDamage": "",
+              "saveDamage": "",
+              "healing": ""
+            },
+            "creatureSizes": [],
+            "creatureTypes": [],
+            "match": {
+              "attacks": false,
+              "disposition": false,
+              "proficiency": false,
+              "saves": false,
+              "ability": ""
+            },
+            "profiles": [
+              {
+                "count": "",
+                "name": "",
+                "_id": "qDkDrhiKo60VPdNy",
+                "uuid": "Actor.eydRBGKYiHb4oCmM",
+                "level": {
+                  "min": null,
+                  "max": null
+                },
+                "types": []
+              }
+            ],
+            "summon": {
+              "prompt": true,
+              "mode": ""
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
             "otherActivityId": "none",
-            "otherActivityAsParentType": true
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "friendlySummon": false,
+            "name": "Дух Ястреба",
+            "tempHP": ""
+          },
+          "duABmKsDRDWhaAZx": {
+            "type": "heal",
+            "img": "icons/creatures/mammals/unicorn-horned-white.webp",
+            "sort": 300000,
+            "activation": {
+              "type": "bonus",
+              "override": false,
+              "condition": ""
+            },
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "value": "1",
+                  "target": "",
+                  "scaling": {}
+                }
+              ]
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "flags": {},
+            "range": {
+              "units": "spec",
+              "override": false,
+              "special": ""
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "stationary": false,
+                "units": "ft",
+                "count": "",
+                "type": "circle",
+                "size": "30"
+              },
+              "affects": {
+                "choice": false,
+                "count": "",
+                "type": "ally",
+                "special": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "visibility": {
+              "level": {
+                "min": null,
+                "max": null
+              },
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false,
+              "identifier": ""
+            },
+            "healing": {
+              "types": [
+                "healing"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@classes.druid.levels"
+              },
+              "scaling": {
+                "number": 1
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": ""
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "otherActivityId": "none",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "name": "Дух единорога  -  лечение",
+            "_id": "duABmKsDRDWhaAZx"
           }
         },
         "advancement": {},
@@ -24392,7 +24447,7 @@
         "systemId": "dnd5e",
         "systemVersion": "5.3.3",
         "createdTime": 1788707484010,
-        "modifiedTime": 1788707484011,
+        "modifiedTime": 1791726498729,
         "lastModifiedBy": "8ylbyi009MpNP6U0",
         "compendiumSource": "Compendium.laaru-dnd5-hw.classfeatures.Item.jSPMdCEtfFKEuW3h",
         "duplicateSource": null,
@@ -24900,9 +24955,726 @@
         "exportSource": null,
         "compendiumSource": "Compendium.dnd5e.equipment24.Item.phbagPoisonBasic"
       }
+    },
+    {
+      "folder": "jmKEtTYfi2OdMmfs",
+      "name": "Сердцеягоды",
+      "type": "consumable",
+      "img": "icons/commodities/flowers/buds-red.webp",
+      "system": {
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "autoDestroy": false,
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Небольшие, ярко-красные ягоды, растущие гроздьями на тонких зелёных стеблях. Они размером с чернику, но более вытянутые и заострённые на конце. Кожица ягод гладкая и блестящая, словно восковая.</p><ul><li>Можно есть сырыми или раздавливать, растворять в жидкости, нагревать и пить.</li><li>Восстанавливают <strong>1 ОЗ</strong> при употреблении.</li><li>При съедании <strong>более 3 за 24 часа</strong> не дают пользы и требуют <strong>спасбросок Телосложения (СЛ 12)</strong>. Провал — существо засыпает на <strong>1 час</strong> (просыпается от урона).</li><li>С одного куста можно собрать <strong>3d6 ягод</strong>.</li></ul>",
+          "chat": ""
+        },
+        "identifier": "new-item",
+        "source": {
+          "revision": 1,
+          "rules": "2014"
+        },
+        "identified": true,
+        "unidentified": {
+          "description": "<p>Небольшие, ярко-красные ягоды, растущие гроздьями на тонких зелёных стеблях. Они размером с чернику, но более вытянутые и заострённые на конце. Кожица ягод гладкая и блестящая, словно восковая.</p>",
+          "name": "Unidentified Consumable"
+        },
+        "container": null,
+        "quantity": 0,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 5,
+          "denomination": "gp"
+        },
+        "rarity": "common",
+        "attunement": "NaN",
+        "attuned": false,
+        "damage": {
+          "base": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "replace": false
+        },
+        "properties": [],
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "equipped": false
+      },
+      "effects": [],
+      "ownership": {
+        "default": 0,
+        "8ylbyi009MpNP6U0": 3
+      },
+      "flags": {
+        "item-piles": {
+          "item": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790508841952,
+        "modifiedTime": 1790509180513,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "PeGF83fmk5NDbDJD",
+      "sort": 118750
+    },
+    {
+      "type": "consumable",
+      "name": "Зелье неостановимого голода",
+      "_id": "6pPXYtmIIK2y7CQ4",
+      "img": "icons/consumables/potions/flask-corked-yellow-glow.webp",
+      "system": {
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "autoDestroy": false
+        },
+        "description": {
+          "value": "<p>You suddenly develop an insatiable hunger for a specific food item for 1d6 hours.</p>",
+          "chat": ""
+        },
+        "identifier": "rashoduemyj-predmet",
+        "source": {
+          "revision": 1,
+          "rules": "2014"
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "attuned": false,
+        "equipped": false,
+        "damage": {
+          "base": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "replace": false
+        },
+        "properties": [],
+        "type": {
+          "value": "",
+          "subtype": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790509191509,
+        "modifiedTime": 1790509254346,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "folder": "jmKEtTYfi2OdMmfs",
+      "name": "Сонная Верба",
+      "type": "consumable",
+      "_id": "B0t4rVmDay8hDoWi",
+      "img": "icons/consumables/plants/leaf-herb-green.webp",
+      "system": {
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "autoDestroy": false
+        },
+        "description": {
+          "value": "<p>Дерево Дримвиллоу (Dreamwillow) отличается изящными серебристо-зелеными листьями, высоко ценимыми в алхимии. Для использования подходят только полностью серебристые листья; взрослое дерево обычно дает 2d6 таких ценных листьев. К счастью, новые листья приобретают серебристый оттенок в течение 1d4 недель. После сбора листья утрачивают свои свойства через 24 часа. Их можно есть и сырыми, но лучше всего заварить пять свежих листьев в горячей воде, чтобы получить сильнодействующий настой.</p><p>Употребление этого настоя позволяет существу избавиться от одного из следующих состояний: слепоты, глухоты, паралича или оглушения.</p><p>Если необходимо сохранить свойства этих листьев на более долгий срок, их можно переработать в Пыльцу восстановления (Dust of Restoration).</p>",
+          "chat": ""
+        },
+        "identifier": "rashoduemyj-predmet",
+        "source": {
+          "revision": 1,
+          "rules": "2014"
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 2,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "damage": {
+          "base": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          },
+          "replace": false
+        },
+        "properties": [],
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "attuned": false,
+        "equipped": false
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "psL8euqpXqwLKuNe": 3
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790516455022,
+        "modifiedTime": 1790516457923,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1RJMNbUOnMk59slw",
+      "name": "Первобытная дикость / Primal Savagery",
+      "type": "spell",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+      "effects": [],
+      "folder": "lBXxCIps7HPa9Q2o",
+      "flags": {
+        "srd5e": {
+          "page": "",
+          "source": "XGE",
+          "hash": "primal%20savagery_xge"
+        },
+        "core": {},
+        "midi-qol": {
+          "fumbleThreshold": null,
+          "effectActivation": false
+        },
+        "midiProperties": {
+          "nodam": false,
+          "fulldam": false,
+          "halfdam": false,
+          "rollOther": false,
+          "critOther": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "concentration": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false
+        },
+        "babele": {
+          "hasTranslation": true,
+          "originalName": "Primal Savagery",
+          "translated": true
+        },
+        "dnd5e": {
+          "migratedProperties": [
+            "somatic"
+          ],
+          "persistSourceMigration": true,
+          "last": {
+            "dnd5eactivity000": {
+              "damageType": {
+                "0": "acid"
+              }
+            }
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Вы направляете первобытную магию, затачивающую ваши зубы или ногти, и готовитесь к агрессивной атаке.</p><p>Совершите атаку заклинанием в ближнем бою против одного существа в пределах 5 футов от вас. При попадании цель получает [[/r 1d10]] урона кислотой. После того, как вы совершите атаку, ваши зубы или ногти вернутся в нормальное состояние.</p><p>Урон заклинания увеличивается на [[/r 1d10]], когда вы достигаете 5 уровня ([[/r 2d10]]), 11 уровня ([[/r 3d10]]) и 17 уровня ([[/r 4d10]]).</p><section class=\"secret\" id=\"secret-4nDcfzBHtRs1WLju\"><p><strong>Примечание</strong></p><p>При достижении указанных уровней, отредактируйте количество урона в настройках.</p></section>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "XGE",
+          "book": "XGE",
+          "revision": 1,
+          "rules": "2014"
+        },
+        "activation": {
+          "type": "action",
+          "condition": "",
+          "value": 1
+        },
+        "duration": {
+          "value": "",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false
+          },
+          "template": {
+            "units": "ft",
+            "contiguous": false,
+            "stationary": false
+          }
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "ability": "",
+        "level": 0,
+        "school": "trs",
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "somatic"
+        ],
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "override": false,
+              "units": "self"
+            },
+            "target": {
+              "prompt": true,
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false
+              },
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "spell"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            },
+            "sort": 0,
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "otherActivityId": null,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "triggeredActivityConsume": true,
+              "triggeredActivityConfigure": true,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "otherActivityAsParentType": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "skipConcentrationCheck": false,
+              "autoCEEffects": "default"
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "rollAs": "target",
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "regionBehavior": {
+              "enabled": false,
+              "dispositionFilter": -1,
+              "excludeSource": true,
+              "oncePerTurn": true,
+              "wallRestriction": "none",
+              "regionVisibility": 2,
+              "attachToken": "default",
+              "rules": []
+            },
+            "regionLight": {
+              "enabled": false,
+              "dim": 0,
+              "bright": 0,
+              "color": null,
+              "alpha": 0.5,
+              "luminosity": 0.5,
+              "animationType": "",
+              "animationSpeed": 5,
+              "animationIntensity": 5
+            },
+            "otherActivityAsParentType": true,
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": "",
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
+          }
+        },
+        "identifier": "pervobytnaya-dikost--primal-savagery",
+        "method": "spell",
+        "sourceItem": "class:druid",
+        "prepared": 1
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.laaru-dnd5-hw.spells.Item.ONXNLO7zz1c3tA2n",
+        "duplicateSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791713459635,
+        "modifiedTime": 1791726648412,
+        "lastModifiedBy": "8ylbyi009MpNP6U0",
+        "exportSource": null
+      },
+      "sort": 2500000,
+      "ownership": {
+        "default": 0,
+        "T0BtUpu1XTcoijv3": 3,
+        "psL8euqpXqwLKuNe": 3
+      }
     }
   ],
-  "effects": [],
+  "effects": [
+    {
+      "origin": "Actor.wB8zIMqH3aguVec8.Item.u60fQhkuwSg578SL",
+      "disabled": false,
+      "img": "icons/commodities/treasure/totem-wooden-glowing-green.webp",
+      "name": "Призыв: Тотем духов / Spirit Totem",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      },
+      "start": {
+        "time": 54,
+        "round": 0,
+        "turn": 0,
+        "combat": null,
+        "combatant": null,
+        "initiative": null
+      },
+      "_id": "EQBSJkTUzrqAm72C",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1790379294638,
+        "modifiedTime": 1790379294638,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "name": "Поиск скрытого",
+      "img": "icons/skills/trades/academics-investigation-study-blue.webp",
+      "origin": "Actor.wB8zIMqH3aguVec8",
+      "disabled": false,
+      "description": "Сделайте проверку [[/check perception]]{Внимательности} или [[/check investigation]]{Анализа}. Вы находите всё скрытое с DC меньше или равным результату вашей проверки: ловушки, потайные двери, ценности.",
+      "statuses": [
+        "search"
+      ],
+      "flags": {
+        "world": {
+          "exploration-activity": true,
+          "description": "Сделайте проверку [[/check perception]]{Внимательности} или [[/check investigation]]{Анализа}. Вы находите всё скрытое с DC меньше или равным результату вашей проверки: ловушки, потайные двери, ценности.",
+          "shortDesc": "Тщательный поиск в области до 50 футов.",
+          "requirements": "вы можете видеть и слышать."
+        },
+        "core": {
+          "statusId": "search"
+        },
+        "dae": {
+          "specialDuration": []
+        }
+      },
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": true
+      },
+      "system": {
+        "changes": []
+      },
+      "_id": "Pso3AOlXeIwRBrnH",
+      "type": "base",
+      "start": {
+        "time": 21911544,
+        "combat": null,
+        "combatant": null,
+        "initiative": null,
+        "round": null,
+        "turn": null
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791723454983,
+        "modifiedTime": 1791724772529,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "dnd5ereaction000",
+      "name": "Reaction used",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.actions.reaction",
+            "type": "override",
+            "value": true,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.actions.reactionsUsed",
+            "type": "override",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.actions.reactionCombatRound",
+            "type": "override",
+            "value": 2,
+            "phase": "initial"
+          }
+        ]
+      },
+      "img": "modules/midi-qol/icons/reaction.svg",
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "shortRest"
+          ]
+        }
+      },
+      "statuses": [
+        "reaction"
+      ],
+      "showIcon": 2,
+      "type": "base",
+      "disabled": false,
+      "start": {
+        "time": 21915150,
+        "combat": "ej8KmmBIUoIjlWOm",
+        "combatant": "5LOmhruFsVlnv6Yh",
+        "initiative": 8,
+        "round": 2,
+        "turn": 10
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "targetStart",
+        "expired": true
+      },
+      "description": "",
+      "origin": "Actor.wB8zIMqH3aguVec8",
+      "tint": "#ffffff",
+      "transfer": false,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1791727200383,
+        "modifiedTime": 1791727761270,
+        "lastModifiedBy": "psL8euqpXqwLKuNe",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
   "ownership": {
     "default": 1
   },
@@ -24933,11 +25705,11 @@
                         },
                         "1-0": {
                           "uuid": "Actor.wB8zIMqH3aguVec8.Item.u60fQhkuwSg578SL",
-                          "name": "Тотем духов",
+                          "name": "Тотем духов / Spirit Totem",
                           "img": "icons/commodities/treasure/totem-wooden-glowing-green.webp",
                           "type": "Item",
                           "uses": {
-                            "value": 1,
+                            "value": 0,
                             "max": 1
                           }
                         },
@@ -24955,7 +25727,7 @@
                           "img": "icons/creatures/mammals/elk-moose-marked-green.webp",
                           "type": "Item",
                           "uses": {
-                            "value": 2,
+                            "value": 1,
                             "max": 2
                           }
                         }
@@ -24965,13 +25737,6 @@
                       "rows": 3,
                       "cols": 5,
                       "items": {
-                        "0-0": {
-                          "uuid": "Actor.wB8zIMqH3aguVec8.Item.5WPNv7kCoPHwrIbJ",
-                          "name": "Друидизм / Druidcraft",
-                          "img": "icons/magic/nature/lotus-glow-pink.webp",
-                          "type": "Item",
-                          "depleted": false
-                        },
                         "1-0": {
                           "uuid": "Actor.wB8zIMqH3aguVec8.Item.ELWSNUBMzXn7K6ox",
                           "name": "Наставление / Guidance",
@@ -24993,13 +25758,6 @@
                           "type": "Item",
                           "depleted": false
                         },
-                        "1-1": {
-                          "uuid": "Actor.wB8zIMqH3aguVec8.Item.Odv2atuh4csfVJf8",
-                          "name": "Разговор с животными / Speak with Animals",
-                          "img": "icons/creatures/mammals/deer-antlers-blue.webp",
-                          "type": "Item",
-                          "depleted": false
-                        },
                         "0-1": {
                           "uuid": "Actor.wB8zIMqH3aguVec8.Item.ngOf0GrMkW4p50Vs",
                           "name": "Дружба с животными / Animal Friendship",
@@ -25014,7 +25772,20 @@
                           "type": "Item",
                           "depleted": false
                         },
-                        "2-0": null
+                        "2-0": {
+                          "uuid": "Actor.wB8zIMqH3aguVec8.Item.HR43OwvmnUS4ANE2",
+                          "name": "Исцеляющее слово / Healing Word",
+                          "img": "icons/magic/life/heart-cross-strong-green.webp",
+                          "type": "Item",
+                          "depleted": false
+                        },
+                        "3-1": {
+                          "uuid": "Actor.wB8zIMqH3aguVec8.Item.1RJMNbUOnMk59slw",
+                          "name": "Первобытная дикость / Primal Savagery",
+                          "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+                          "type": "Item",
+                          "depleted": false
+                        }
                       }
                     },
                     {
@@ -25043,6 +25814,12 @@
                             "value": 1,
                             "max": 1
                           }
+                        },
+                        "0-0": {
+                          "uuid": "Macro.OX2pucsFSOy1YIa3",
+                          "name": "Ходы Подземелья",
+                          "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
+                          "type": "Macro"
                         }
                       }
                     }
@@ -25069,11 +25846,11 @@
                 },
                 "1-0": {
                   "uuid": "Actor.wB8zIMqH3aguVec8.Item.u60fQhkuwSg578SL",
-                  "name": "Тотем духов",
+                  "name": "Тотем духов / Spirit Totem",
                   "img": "icons/commodities/treasure/totem-wooden-glowing-green.webp",
                   "type": "Item",
                   "uses": {
-                    "value": 1,
+                    "value": 0,
                     "max": 1
                   }
                 },
@@ -25091,7 +25868,7 @@
                   "img": "icons/creatures/mammals/elk-moose-marked-green.webp",
                   "type": "Item",
                   "uses": {
-                    "value": 2,
+                    "value": 1,
                     "max": 2
                   }
                 }
@@ -25101,13 +25878,6 @@
               "rows": 3,
               "cols": 5,
               "items": {
-                "0-0": {
-                  "uuid": "Actor.wB8zIMqH3aguVec8.Item.5WPNv7kCoPHwrIbJ",
-                  "name": "Друидизм / Druidcraft",
-                  "img": "icons/magic/nature/lotus-glow-pink.webp",
-                  "type": "Item",
-                  "depleted": false
-                },
                 "1-0": {
                   "uuid": "Actor.wB8zIMqH3aguVec8.Item.ELWSNUBMzXn7K6ox",
                   "name": "Наставление / Guidance",
@@ -25129,13 +25899,6 @@
                   "type": "Item",
                   "depleted": false
                 },
-                "1-1": {
-                  "uuid": "Actor.wB8zIMqH3aguVec8.Item.Odv2atuh4csfVJf8",
-                  "name": "Разговор с животными / Speak with Animals",
-                  "img": "icons/creatures/mammals/deer-antlers-blue.webp",
-                  "type": "Item",
-                  "depleted": false
-                },
                 "0-1": {
                   "uuid": "Actor.wB8zIMqH3aguVec8.Item.ngOf0GrMkW4p50Vs",
                   "name": "Дружба с животными / Animal Friendship",
@@ -25150,7 +25913,20 @@
                   "type": "Item",
                   "depleted": false
                 },
-                "2-0": null
+                "2-0": {
+                  "uuid": "Actor.wB8zIMqH3aguVec8.Item.HR43OwvmnUS4ANE2",
+                  "name": "Исцеляющее слово / Healing Word",
+                  "img": "icons/magic/life/heart-cross-strong-green.webp",
+                  "type": "Item",
+                  "depleted": false
+                },
+                "3-1": {
+                  "uuid": "Actor.wB8zIMqH3aguVec8.Item.1RJMNbUOnMk59slw",
+                  "name": "Первобытная дикость / Primal Savagery",
+                  "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+                  "type": "Item",
+                  "depleted": false
+                }
               }
             },
             {
@@ -25179,6 +25955,12 @@
                     "value": 1,
                     "max": 1
                   }
+                },
+                "0-0": {
+                  "uuid": "Macro.OX2pucsFSOy1YIa3",
+                  "name": "Ходы Подземелья",
+                  "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
+                  "type": "Macro"
                 }
               }
             }
@@ -25193,7 +25975,7 @@
                 "0-0": {
                   "uuid": "Actor.wB8zIMqH3aguVec8.Item.hmOUmxRqN3L0kgnQ",
                   "name": "Боевой посох / Quarterstaff",
-                  "img": "icons/weapons/staves/staff-simple-gold.webp",
+                  "img": "icons/weapons/staves/staff-nature-spiral.webp",
                   "type": "Item",
                   "quantity": 1
                 },
@@ -25241,7 +26023,7 @@
               }
             }
           ],
-          "activeSet": 1
+          "activeSet": 0
         },
         "quickAccess": {
           "grids": [
@@ -25283,7 +26065,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.3.3",
     "createdTime": 1788375630026,
-    "modifiedTime": 1789419903753,
+    "modifiedTime": 1791728138616,
     "lastModifiedBy": "psL8euqpXqwLKuNe",
     "compendiumSource": null,
     "duplicateSource": null,
